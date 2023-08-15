@@ -1,3 +1,6 @@
+using BigOn_WebUI.Models.Persistences;
+using Microsoft.EntityFrameworkCore;
+
 namespace BigOn_WebUI
 {
     public class Program
@@ -7,6 +10,10 @@ namespace BigOn_WebUI
             var builder = WebApplication.CreateBuilder(args);
 
             builder.Services.AddControllersWithViews();
+            builder.Services.AddDbContext<DataContext>(
+                cfg => { cfg.UseSqlServer(builder.Configuration.GetConnectionString("cstring"));
+
+                });
 
             var app = builder.Build();
 
