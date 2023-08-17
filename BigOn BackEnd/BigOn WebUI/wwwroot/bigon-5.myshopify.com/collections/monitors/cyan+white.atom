@@ -1,0 +1,3883 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://bigon-5.myshopify.com/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://bigon-5.myshopify.com/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://bigon-5.myshopify.com/collections/monitors.atom"/>
+  <title>BigOn Responsive Ecommerce Shopify Theme</title>
+  <updated>2021-09-16T05:21:22-04:00</updated>
+  <author>
+    <name>BigOn Responsive Ecommerce Shopify Theme</name>
+  </author>
+  <entry>
+    <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+    <published>2021-09-16T05:21:22-04:00</published>
+    <updated>2021-09-16T05:21:22-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://bigon-5.myshopify.com/products/preorder-product"/>
+    <title>Preorder Product</title>
+    <s:type>chair</s:type>
+    <s:vendor>hatil</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0019/7181/4451/products/1_692a198d-4aa1-47f0-b89e-6dbf5e09b1ed.jpg?v=1631784084"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>hatil<br>
+        <strong>Type: </strong>chair<br>
+        <strong>Price: </strong>
+            50.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>[new_products]300[/new_products]</p>
+<p><span>[countdown]2025/01/15[/countdown]</span></p>
+<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+[short_description]
+<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
+[/short_description] [product_description]
+<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+[/product_description]</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>xl / gray / partex</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>xl / gray / wood</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>xl / gray / glass</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>xl / magenta / partex</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>xl / magenta / wood</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>xl / magenta / glass</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>xl / orange / partex</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>xl / orange / wood</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>xl / orange / glass</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>ml / gray / partex</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>ml / gray / wood</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>ml / gray / glass</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>ml / magenta / partex</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>ml / magenta / wood</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>ml / magenta / glass</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>ml / orange / partex</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>ml / orange / wood</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>ml / orange / glass</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>xs / gray / partex</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>xs / gray / wood</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>xs / gray / glass</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>xs / magenta / partex</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>xs / magenta / wood</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>xs / magenta / glass</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>xs / orange / partex</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>xs / orange / wood</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/6603927519283</id>
+      <title>xs / orange / glass</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://bigon-5.myshopify.com/products/594909757491</id>
+    <published>2018-04-14T23:58:29-04:00</published>
+    <updated>2018-04-14T23:58:29-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://bigon-5.myshopify.com/products/aliquam-consequat-mattis"/>
+    <title>aliquam consequat mattis</title>
+    <s:type>assorted</s:type>
+    <s:vendor>otobi</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0019/7181/4451/products/13_4c2523e0-85e5-4012-a257-f51471b0095c.jpg?v=1523765450"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>otobi<br>
+        <strong>Type: </strong>assorted<br>
+        <strong>Price: </strong>
+            150.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+[short_description]
+<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+[/short_description] [product_description]
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+<p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
+[/product_description]</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>gray</s:tag>
+    <s:tag>magenta</s:tag>
+    <s:tag>orange</s:tag>
+    <s:tag>pink</s:tag>
+    <s:tag>purple</s:tag>
+    <s:tag>violet</s:tag>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xl / gray / partex</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xl / gray / wood</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xl / gray / glass</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xl / magenta / partex</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xl / magenta / wood</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xl / magenta / glass</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xl / orange / partex</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xl / orange / wood</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xl / orange / glass</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xl / purple / partex</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xl / purple / wood</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xl / purple / glass</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xl / pink / partex</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xl / pink / wood</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xl / pink / glass</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xl / violet / partex</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xl / violet / wood</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xl / violet / glass</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>ml / gray / partex</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>ml / gray / wood</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>ml / gray / glass</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>ml / magenta / partex</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>ml / magenta / wood</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>ml / magenta / glass</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>ml / orange / partex</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>ml / orange / wood</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>ml / orange / glass</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>ml / purple / partex</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>ml / purple / wood</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>ml / purple / glass</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>ml / pink / partex</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>ml / pink / wood</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>ml / pink / glass</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>ml / violet / partex</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>ml / violet / wood</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>ml / violet / glass</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xs / gray / partex</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xs / gray / wood</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xs / gray / glass</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xs / magenta / partex</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xs / magenta / wood</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xs / magenta / glass</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xs / orange / partex</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xs / orange / wood</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xs / orange / glass</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xs / purple / partex</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xs / purple / wood</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xs / purple / glass</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xs / pink / partex</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xs / pink / wood</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xs / pink / glass</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xs / violet / partex</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xs / violet / wood</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909757491</id>
+      <title>xs / violet / glass</title>
+      <s:price currency="USD">150.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://bigon-5.myshopify.com/products/594909724723</id>
+    <published>2018-04-14T23:58:26-04:00</published>
+    <updated>2018-04-14T23:58:26-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://bigon-5.myshopify.com/products/exercitation-ullamco"/>
+    <title>exercitation ullamco</title>
+    <s:type>chair</s:type>
+    <s:vendor>hatil</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0019/7181/4451/products/1_6c887195-3f4a-4073-b6ba-869f8d6948ec.jpg?v=1523766378"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>hatil<br>
+        <strong>Type: </strong>chair<br>
+        <strong>Price: </strong>
+            50.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>[new_products]300[/new_products]</p>
+<p><span>[countdown]2025/01/15[/countdown]</span></p>
+<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+[short_description]
+<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
+[/short_description] [product_description]
+<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+[/product_description]</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909724723</id>
+      <title>Default Title</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://bigon-5.myshopify.com/products/594909495347</id>
+    <published>2018-04-14T23:58:10-04:00</published>
+    <updated>2018-04-14T23:58:10-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://bigon-5.myshopify.com/products/fhasellus-viverra-urna"/>
+    <title>fhasellus viverra urna</title>
+    <s:type>box</s:type>
+    <s:vendor>brothers</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0019/7181/4451/products/8_94d1209f-f2f2-4efb-a93e-1b36d14f389f.jpg?v=1523766150"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>brothers<br>
+        <strong>Type: </strong>box<br>
+        <strong>Price: </strong>
+            30.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>[new_products]300[/new_products]</p>
+<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,</p>
+[short_description]
+<ul>
+<li>Contrary to popular belief</li>
+<li>Lorem Ipsum simply random</li>
+<li>It has roots</li>
+<li>Latin literature</li>
+<li>Richard McClintock</li>
+</ul>
+<p><span>[/short_description]</span></p>
+<p>[product_description]</p>
+<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+[/product_description]</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909495347</id>
+      <title>Default Title</title>
+      <s:price currency="USD">30.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://bigon-5.myshopify.com/products/594909429811</id>
+    <published>2018-04-14T23:58:07-04:00</published>
+    <updated>2018-04-14T23:58:07-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://bigon-5.myshopify.com/products/donec-ac-tempus-nrb"/>
+    <title>donec ac tempus nrb</title>
+    <s:type>table-lamp</s:type>
+    <s:vendor>hatil</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0019/7181/4451/products/20_80d8bbf2-2053-4541-bdd5-0db272583577.jpg?v=1523765501"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>hatil<br>
+        <strong>Type: </strong>table-lamp<br>
+        <strong>Price: </strong>
+            50.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>[new_products]300[/new_products]</p>
+<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
+[short_description]
+<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
+[/short_description] [product_description]
+<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+[/product_description]</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594909429811</id>
+      <title>Default Title</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://bigon-5.myshopify.com/products/594908512307</id>
+    <published>2018-04-14T23:56:39-04:00</published>
+    <updated>2018-04-14T23:56:39-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://bigon-5.myshopify.com/products/donec-non-est-ullamcorper"/>
+    <title>donec non est ullamcorper</title>
+    <s:type>assorted</s:type>
+    <s:vendor>rokomari</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0019/7181/4451/products/21_e8a6a47e-927f-450d-b6e2-fbd7e4c93500.jpg?v=1523765508"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>rokomari<br>
+        <strong>Type: </strong>assorted<br>
+        <strong>Price: </strong>
+            100.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+[short_description]
+<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+[/short_description] [product_description]
+<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+[/product_description]</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>blue</s:tag>
+    <s:tag>glass</s:tag>
+    <s:tag>green</s:tag>
+    <s:tag>L</s:tag>
+    <s:tag>M</s:tag>
+    <s:tag>ml</s:tag>
+    <s:tag>partex</s:tag>
+    <s:tag>red</s:tag>
+    <s:tag>white</s:tag>
+    <s:tag>wood</s:tag>
+    <s:tag>X</s:tag>
+    <s:tag>xl</s:tag>
+    <s:tag>xs</s:tag>
+    <s:tag>yellow</s:tag>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xl / red / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xl / red / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xl / red / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xl / green / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xl / green / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xl / green / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xl / white / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xl / white / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xl / white / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xl / yellow / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xl / yellow / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xl / yellow / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xl / blue / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xl / blue / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xl / blue / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xs / red / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xs / red / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xs / red / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xs / green / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xs / green / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xs / green / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xs / white / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xs / white / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xs / white / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xs / yellow / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xs / yellow / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xs / yellow / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xs / blue / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xs / blue / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>xs / blue / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>ml / red / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>ml / red / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>ml / red / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>ml / green / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>ml / green / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>ml / green / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>ml / white / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>ml / white / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>ml / white / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>ml / yellow / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>ml / yellow / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>ml / yellow / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>ml / blue / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>ml / blue / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>ml / blue / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>X / red / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>X / red / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>X / red / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>X / green / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>X / green / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>X / green / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>X / white / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>X / white / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>X / white / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>X / yellow / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>X / yellow / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>X / yellow / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>X / blue / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>X / blue / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>X / blue / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>L / red / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>L / red / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>L / red / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>L / green / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>L / green / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>L / green / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>L / white / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>L / white / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>L / white / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>L / yellow / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>L / yellow / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>L / yellow / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>L / blue / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>L / blue / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>L / blue / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>M / red / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>M / red / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>M / red / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>M / green / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>M / green / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>M / green / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>M / white / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>M / white / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>M / white / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>M / yellow / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>M / yellow / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>M / yellow / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>M / blue / partex</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>M / blue / wood</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594908512307</id>
+      <title>M / blue / glass</title>
+      <s:price currency="USD">100.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://bigon-5.myshopify.com/products/594907267123</id>
+    <published>2018-04-14T23:55:36-04:00</published>
+    <updated>2018-04-14T23:55:36-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://bigon-5.myshopify.com/products/dummy-product-name"/>
+    <title>dummy Product name</title>
+    <s:type>table</s:type>
+    <s:vendor>otobi</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0019/7181/4451/products/1_eb60c612-027d-435f-91e5-e2bd442a72e3.jpg?v=1523765536"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>otobi<br>
+        <strong>Type: </strong>table<br>
+        <strong>Price: </strong>
+            56.20
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>[new_products]300[/new_products]</p>
+<p><span>[countdown]2025/01/15[/countdown]</span></p>
+[short_description]
+<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
+[/short_description] [product_description]
+<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+[/product_description]</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907267123</id>
+      <title>Default Title</title>
+      <s:price currency="USD">56.20</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://bigon-5.myshopify.com/products/594907037747</id>
+    <published>2018-04-14T23:55:16-04:00</published>
+    <updated>2018-04-14T23:55:16-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://bigon-5.myshopify.com/products/accusantium-doloremque"/>
+    <title>accusantium doloremque</title>
+    <s:type>assorted</s:type>
+    <s:vendor>hatil</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0019/7181/4451/products/1.jpg?v=1523764933"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>hatil<br>
+        <strong>Type: </strong>assorted<br>
+        <strong>Price: </strong>
+            130.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+[short_description]
+<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+[/short_description] [product_description]
+<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+[/product_description]</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>black</s:tag>
+    <s:tag>brown</s:tag>
+    <s:tag>cyan</s:tag>
+    <s:tag>glass</s:tag>
+    <s:tag>gold</s:tag>
+    <s:tag>gray</s:tag>
+    <s:tag>L</s:tag>
+    <s:tag>M</s:tag>
+    <s:tag>magenta</s:tag>
+    <s:tag>ml</s:tag>
+    <s:tag>partex</s:tag>
+    <s:tag>steel</s:tag>
+    <s:tag>wood</s:tag>
+    <s:tag>X</s:tag>
+    <s:tag>xl</s:tag>
+    <s:tag>xs</s:tag>
+    <s:tag>yellow</s:tag>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xl / yellow / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xl / yellow / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xl / yellow / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xl / black / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xl / black / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xl / black / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xl / brown / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xl / brown / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xl / brown / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xl / gray / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xl / gray / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xl / gray / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xl / magenta / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xl / magenta / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xl / magenta / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>ml / yellow / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>ml / yellow / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>ml / yellow / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>ml / black / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>ml / black / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>ml / black / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>ml / brown / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>ml / brown / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>ml / brown / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>ml / gray / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>ml / gray / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>ml / gray / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>ml / magenta / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>ml / magenta / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>ml / magenta / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xs / yellow / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xs / yellow / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xs / yellow / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xs / black / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xs / black / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xs / black / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xs / brown / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xs / brown / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xs / brown / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xs / gray / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xs / gray / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xs / gray / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xs / magenta / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xs / magenta / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>xs / magenta / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>X / yellow / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>X / yellow / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>X / yellow / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>X / black / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>X / black / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>X / black / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>X / brown / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>X / brown / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>X / brown / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>X / gray / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>X / gray / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>X / gray / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>X / magenta / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>X / magenta / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>X / magenta / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>L / yellow / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>L / yellow / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>L / yellow / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>L / black / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>L / black / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>L / black / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>L / brown / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>L / brown / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>L / brown / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>L / gray / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>L / gray / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>L / gray / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>L / magenta / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>L / magenta / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>L / magenta / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>M / yellow / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>M / yellow / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>M / yellow / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>M / black / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>M / black / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>M / black / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>M / brown / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>M / brown / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>M / brown / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>M / gray / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>M / gray / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>M / gray / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>M / magenta / partex</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>M / magenta / wood</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594907037747</id>
+      <title>M / magenta / glass</title>
+      <s:price currency="USD">130.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://bigon-5.myshopify.com/products/594906906675</id>
+    <published>2018-04-14T23:55:01-04:00</published>
+    <updated>2018-04-14T23:55:01-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://bigon-5.myshopify.com/products/florem-ipsum-dolor-sit"/>
+    <title>florem ipsum dolor sit</title>
+    <s:type></s:type>
+    <s:vendor>raggery</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0019/7181/4451/products/9_d569cae7-f77d-4ed1-8bca-733c2c2ece30.jpg?v=1523766156"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>raggery<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            0.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+<p><span>[short_description]</span></p>
+<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+<p><span>[/short_description] [product_description]</span></p>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+<p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
+<p><span>[/product_description]</span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906906675</id>
+      <title>Default Title</title>
+      <s:price currency="USD">0.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://bigon-5.myshopify.com/products/594906873907</id>
+    <published>2018-04-14T23:54:51-04:00</published>
+    <updated>2018-04-14T23:54:51-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://bigon-5.myshopify.com/products/dummy-product-title-1"/>
+    <title>dummy Product title</title>
+    <s:type>watch</s:type>
+    <s:vendor>rokomari</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0019/7181/4451/products/23_b6821e11-d063-4b49-9c48-553acf3ada45.jpg?v=1523766281"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>rokomari<br>
+        <strong>Type: </strong>watch<br>
+        <strong>Price: </strong>
+            120.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><span>[countdown]2025/01/15[/countdown]</span></p>
+<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+[short_description]
+<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+[/short_description] [product_description]
+<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+[/product_description]</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>black</s:tag>
+    <s:tag>brown</s:tag>
+    <s:tag>cyan</s:tag>
+    <s:tag>gold</s:tag>
+    <s:tag>ml</s:tag>
+    <s:tag>partex</s:tag>
+    <s:tag>steel</s:tag>
+    <s:tag>wood</s:tag>
+    <s:tag>xl</s:tag>
+    <s:tag>xs</s:tag>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>xl / black / partex</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253501</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>xl / black / wood</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253502</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>xl / black / steel</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253503</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>xl / brown / partex</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253504</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>xl / brown / wood</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253505</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>xl / brown / steel</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253506</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>xl / cyan / partex</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253507</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>xl / cyan / wood</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253508</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>xl / cyan / steel</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253509</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>xl / gold / partex</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253510</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>xl / gold / wood</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253511</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>xl / gold / steel</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253512</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>ml / black / partex</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253513</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>ml / black / wood</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253514</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>ml / black / steel</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253515</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>ml / brown / partex</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253516</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>ml / brown / wood</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253517</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>ml / brown / steel</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253518</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>ml / cyan / partex</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253519</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>ml / cyan / wood</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253520</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>ml / cyan / steel</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253521</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>ml / gold / partex</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253522</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>ml / gold / wood</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253523</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>ml / gold / steel</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253524</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>xs / black / partex</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253525</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>xs / black / wood</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253526</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>xs / black / steel</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253527</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>xs / brown / partex</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253528</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>xs / brown / wood</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253529</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>xs / brown / steel</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253530</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>xs / cyan / partex</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253531</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>xs / cyan / wood</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253532</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>xs / cyan / steel</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253533</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>xs / gold / partex</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253534</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>xs / gold / wood</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253535</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906873907</id>
+      <title>xs / gold / steel</title>
+      <s:price currency="USD">120.00</s:price>
+      <s:sku>11253536</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://bigon-5.myshopify.com/products/594906644531</id>
+    <published>2018-04-14T23:54:30-04:00</published>
+    <updated>2018-04-14T23:54:30-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://bigon-5.myshopify.com/products/dummy-product-name-6"/>
+    <title>dummy Product name</title>
+    <s:type>assorted</s:type>
+    <s:vendor>navana</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0019/7181/4451/products/12_89b6d6e2-7c35-44d6-9227-237feb88ff54.jpg?v=1523765056"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>navana<br>
+        <strong>Type: </strong>assorted<br>
+        <strong>Price: </strong>
+            80.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><span>[countdown]2025/01/15[/countdown]</span></p>
+<p> </p>
+<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+[short_description]
+<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+[/short_description] [product_description]
+<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+[/product_description]</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>black</s:tag>
+    <s:tag>brown</s:tag>
+    <s:tag>cyan</s:tag>
+    <s:tag>glass</s:tag>
+    <s:tag>gold</s:tag>
+    <s:tag>gray</s:tag>
+    <s:tag>L</s:tag>
+    <s:tag>M</s:tag>
+    <s:tag>steel</s:tag>
+    <s:tag>wood</s:tag>
+    <s:tag>X</s:tag>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>X / black / wood</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253201</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>X / black / glass</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253202</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>X / black / steel</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253203</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>X / brown / wood</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253204</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>X / brown / glass</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253205</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>X / brown / steel</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253206</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>X / cyan / wood</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253207</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>X / cyan / glass</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253208</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>X / cyan / steel</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253209</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>X / gold / wood</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253210</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>X / gold / glass</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253211</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>X / gold / steel</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253212</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>X / gray / wood</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253213</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>X / gray / glass</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253214</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>X / gray / steel</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253215</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>L / black / wood</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253216</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>L / black / glass</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253217</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>L / black / steel</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253218</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>L / brown / wood</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253219</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>L / brown / glass</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253220</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>L / brown / steel</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253221</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>L / cyan / wood</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253222</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>L / cyan / glass</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253223</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>L / cyan / steel</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253224</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>L / gold / wood</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253225</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>L / gold / glass</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253226</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>L / gold / steel</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253227</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>L / gray / wood</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253228</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>L / gray / glass</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253229</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>L / gray / steel</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253230</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>M / black / wood</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253231</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>M / black / glass</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253232</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>M / black / steel</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253233</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>M / brown / wood</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253234</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>M / brown / glass</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253235</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>M / brown / steel</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253236</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>M / cyan / wood</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253237</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>M / cyan / glass</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253238</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>M / cyan / steel</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253239</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>M / gold / wood</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253240</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>M / gold / glass</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253241</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>M / gold / steel</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253242</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>M / gray / wood</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253243</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>M / gray / glass</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253244</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594906644531</id>
+      <title>M / gray / steel</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>11253245</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://bigon-5.myshopify.com/products/594905956403</id>
+    <published>2018-04-14T23:53:34-04:00</published>
+    <updated>2018-04-14T23:53:34-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://bigon-5.myshopify.com/products/demo-product-title-2"/>
+    <title>Demo Product Title</title>
+    <s:type>table-lamp</s:type>
+    <s:vendor>hatil</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0019/7181/4451/products/7_a2453dd6-3755-457a-8da2-b60d0312768b.jpg?v=1523764989"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>hatil<br>
+        <strong>Type: </strong>table-lamp<br>
+        <strong>Price: </strong>
+            50.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>[new_products]300[/new_products]</p>
+<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
+[short_description]
+<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
+[/short_description] [product_description]
+<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+[/product_description]</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>gray</s:tag>
+    <s:tag>L</s:tag>
+    <s:tag>M</s:tag>
+    <s:tag>X</s:tag>
+    <s:tag>xl</s:tag>
+    <s:tag>xs</s:tag>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905956403</id>
+      <title>Default Title</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://bigon-5.myshopify.com/products/594905759795</id>
+    <published>2018-04-14T23:53:24-04:00</published>
+    <updated>2018-04-14T23:53:24-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://bigon-5.myshopify.com/products/carry-bag-of-leather"/>
+    <title>Carry Bag of Leather</title>
+    <s:type>chair</s:type>
+    <s:vendor>otobi</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0019/7181/4451/products/3_fcbdd06e-527c-478b-878d-3f297b4a6453.jpg?v=1523764955"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>otobi<br>
+        <strong>Type: </strong>chair<br>
+        <strong>Price: </strong>
+            80.00 - 99.00
+            <a href="https://bigon-5.myshopify.com/products/carry-bag-of-leather">(45 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+[short_description]
+<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+[/short_description] [product_description]
+<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+[/product_description]</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>glass</s:tag>
+    <s:tag>magenta</s:tag>
+    <s:tag>ml</s:tag>
+    <s:tag>orange</s:tag>
+    <s:tag>partex</s:tag>
+    <s:tag>pink</s:tag>
+    <s:tag>purple</s:tag>
+    <s:tag>violet</s:tag>
+    <s:tag>wood</s:tag>
+    <s:tag>xl</s:tag>
+    <s:tag>xs</s:tag>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xl / magenta / partex</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xl / magenta / wood</title>
+      <s:price currency="USD">90.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xl / magenta / glass</title>
+      <s:price currency="USD">99.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xl / orange / partex</title>
+      <s:price currency="USD">85.66</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xl / orange / wood</title>
+      <s:price currency="USD">86.66</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xl / orange / glass</title>
+      <s:price currency="USD">90.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xl / purple / partex</title>
+      <s:price currency="USD">95.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xl / purple / wood</title>
+      <s:price currency="USD">92.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xl / purple / glass</title>
+      <s:price currency="USD">93.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xl / pink / partex</title>
+      <s:price currency="USD">95.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xl / pink / wood</title>
+      <s:price currency="USD">96.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xl / pink / glass</title>
+      <s:price currency="USD">97.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xl / violet / partex</title>
+      <s:price currency="USD">92.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xl / violet / wood</title>
+      <s:price currency="USD">87.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xl / violet / glass</title>
+      <s:price currency="USD">88.88</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>ml / magenta / partex</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>ml / magenta / wood</title>
+      <s:price currency="USD">96.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>ml / magenta / glass</title>
+      <s:price currency="USD">97.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>ml / orange / partex</title>
+      <s:price currency="USD">92.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>ml / orange / wood</title>
+      <s:price currency="USD">94.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>ml / orange / glass</title>
+      <s:price currency="USD">95.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>ml / purple / partex</title>
+      <s:price currency="USD">94.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>ml / purple / wood</title>
+      <s:price currency="USD">91.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>ml / purple / glass</title>
+      <s:price currency="USD">86.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>ml / pink / partex</title>
+      <s:price currency="USD">83.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>ml / pink / wood</title>
+      <s:price currency="USD">82.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>ml / pink / glass</title>
+      <s:price currency="USD">81.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>ml / violet / partex</title>
+      <s:price currency="USD">83.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>ml / violet / wood</title>
+      <s:price currency="USD">84.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>ml / violet / glass</title>
+      <s:price currency="USD">86.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xs / magenta / partex</title>
+      <s:price currency="USD">87.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xs / magenta / wood</title>
+      <s:price currency="USD">89.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xs / magenta / glass</title>
+      <s:price currency="USD">88.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xs / orange / partex</title>
+      <s:price currency="USD">88.88</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xs / orange / wood</title>
+      <s:price currency="USD">82.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xs / orange / glass</title>
+      <s:price currency="USD">86.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xs / purple / partex</title>
+      <s:price currency="USD">83.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xs / purple / wood</title>
+      <s:price currency="USD">96.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xs / purple / glass</title>
+      <s:price currency="USD">97.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xs / pink / partex</title>
+      <s:price currency="USD">97.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xs / pink / wood</title>
+      <s:price currency="USD">94.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xs / pink / glass</title>
+      <s:price currency="USD">95.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xs / violet / partex</title>
+      <s:price currency="USD">82.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xs / violet / wood</title>
+      <s:price currency="USD">82.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594905759795</id>
+      <title>xs / violet / glass</title>
+      <s:price currency="USD">83.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://bigon-5.myshopify.com/products/594904318003</id>
+    <published>2018-04-14T23:52:51-04:00</published>
+    <updated>2018-04-14T23:52:51-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://bigon-5.myshopify.com/products/hair-brush-box"/>
+    <title>Hair Brush box</title>
+    <s:type>table-lamp</s:type>
+    <s:vendor>rokomari</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0019/7181/4451/products/11_07dbfd51-f352-4f1d-8bc2-7b28ecf8f750.jpg?v=1523766169"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>rokomari<br>
+        <strong>Type: </strong>table-lamp<br>
+        <strong>Price: </strong>
+            50.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>[new_products]300[/new_products]</p>
+<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,</p>
+[short_description]
+<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,</p>
+[/short_description] [product_description]
+<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+[/product_description]</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594904318003</id>
+      <title>Default Title</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://bigon-5.myshopify.com/products/594903826483</id>
+    <published>2018-04-14T23:52:38-04:00</published>
+    <updated>2018-04-14T23:52:38-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://bigon-5.myshopify.com/products/demo-product-title-1"/>
+    <title>Demo Product Title</title>
+    <s:type>shirt</s:type>
+    <s:vendor>brothers</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0019/7181/4451/products/4_77a2ee66-7641-4015-8898-db8d1959b525.jpg?v=1523764965"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>brothers<br>
+        <strong>Type: </strong>shirt<br>
+        <strong>Price: </strong>
+            30.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>[new_products]300[/new_products]</p>
+<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,box</p>
+[short_description]
+<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,</p>
+[/short_description] [product_description]
+<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+[/product_description]</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903826483</id>
+      <title>Default Title</title>
+      <s:price currency="USD">30.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://bigon-5.myshopify.com/products/594903466035</id>
+    <published>2018-04-14T23:52:24-04:00</published>
+    <updated>2018-04-14T23:52:24-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://bigon-5.myshopify.com/products/dummy-product-name-9"/>
+    <title>Dummy Product Name</title>
+    <s:type>chair</s:type>
+    <s:vendor>rokomari</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0019/7181/4451/products/8_cc19857d-ecd0-4c12-83f5-a3826183f428.jpg?v=1523765027"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>rokomari<br>
+        <strong>Type: </strong>chair<br>
+        <strong>Price: </strong>
+            60.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+[short_description]
+<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+[/short_description] [product_description]
+<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+[/product_description]</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>black</s:tag>
+    <s:tag>brown</s:tag>
+    <s:tag>cyan</s:tag>
+    <s:tag>gold</s:tag>
+    <s:tag>gray</s:tag>
+    <s:tag>ml</s:tag>
+    <s:tag>white</s:tag>
+    <s:tag>xl</s:tag>
+    <s:tag>xs</s:tag>
+    <s:tag>yellow</s:tag>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xl / white / partex</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2015</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xl / white / wood</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2016</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xl / white / glass</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2017</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xl / yellow / partex</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2018</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xl / yellow / wood</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2019</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xl / yellow / glass</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2020</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xl / black / partex</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2021</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xl / black / wood</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2022</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xl / black / glass</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2023</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xl / brown / partex</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2024</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xl / brown / wood</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2025</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xl / brown / glass</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2026</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xl / cyan / partex</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2027</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xl / cyan / wood</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2028</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xl / cyan / glass</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2029</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xl / gold / partex</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2030</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xl / gold / wood</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2031</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xl / gold / glass</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2032</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xl / gray / partex</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2033</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xl / gray / wood</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2034</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xl / gray / glass</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2035</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>ml / white / partex</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2036</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>ml / white / wood</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2037</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>ml / white / glass</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2038</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>ml / yellow / partex</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2039</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>ml / yellow / wood</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2040</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>ml / yellow / glass</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2041</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>ml / black / partex</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2042</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>ml / black / wood</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2043</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>ml / black / glass</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2044</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>ml / brown / partex</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2045</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>ml / brown / wood</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2046</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>ml / brown / glass</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2047</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>ml / cyan / partex</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2048</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>ml / cyan / wood</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2049</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>ml / cyan / glass</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2050</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>ml / gold / partex</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2051</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>ml / gold / wood</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2052</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>ml / gold / glass</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2053</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>ml / gray / partex</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2054</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>ml / gray / wood</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2055</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>ml / gray / glass</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2056</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xs / white / partex</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2057</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xs / white / wood</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2058</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xs / white / glass</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2059</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xs / yellow / partex</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2060</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xs / yellow / wood</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2061</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xs / yellow / glass</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2062</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xs / black / partex</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2063</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xs / black / wood</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2064</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xs / black / glass</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2065</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xs / brown / partex</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2066</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xs / brown / wood</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2067</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xs / brown / glass</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2068</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xs / cyan / partex</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2069</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xs / cyan / wood</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2070</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xs / cyan / glass</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2071</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xs / gold / partex</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2072</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xs / gold / wood</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2073</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xs / gold / glass</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2074</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xs / gray / partex</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2075</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xs / gray / wood</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2076</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bigon-5.myshopify.com/products/594903466035</id>
+      <title>xs / gray / glass</title>
+      <s:price currency="USD">60.00</s:price>
+      <s:sku>2077</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+</feed>
