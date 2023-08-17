@@ -21,6 +21,11 @@ namespace BigOn_WebUI
 
                     });
 
+            builder.Services.AddRouting(cfg =>
+            {
+                cfg.LowercaseUrls = true;
+            });
+
             var app = builder.Build();
 
             app.UseStaticFiles();
