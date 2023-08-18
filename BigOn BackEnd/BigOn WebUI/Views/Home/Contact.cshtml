@@ -1,6 +1,8 @@
-﻿@{
+﻿
+@{
     ViewData["Title"] = "Contact";
 }
+
 <div id="shopify-section-template--14146668527667__main" class="shopify-section">
 <!-- Google Map Start -->
 <div class="contact-map" id="section-template--14146668527667__main">
@@ -10,15 +12,19 @@
 <script>
         // When the window has finished loading create our google map below
         google.maps.event.addDomListener(window, 'load', init);
+
         function init() {
             // Basic options for a simple Google Map
             // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
             var mapOptions = {
                 // How zoomed in you want the map to start at (always required)
                 zoom: 11,
+
                 scrollwheel: false,
+
                 // The latitude and longitude to center the map (always required)
                 center: new google.maps.LatLng(23.761226, 90.420766), // New York
+
                 // How you would like to style the map. 
                 // This is where you would paste any style found on Snazzy Maps.
                 styles: [{
@@ -101,11 +107,14 @@
                     }
                 ]
             };
+
             // Get the HTML DOM element that will contain your map 
             // We are using a div with id="map" seen below in the <body>
             var mapElement = document.getElementById('map');
+
             // Create the Google Map using our element and options defined above
             var map = new google.maps.Map(mapElement, mapOptions);
+
             // Let's also add a marker while we're at it
             var marker = new google.maps.Marker({
                 position: new google.maps.LatLng(23.761226, 90.420766),
@@ -116,6 +125,7 @@
 </script>
   </div>
 </div>
+
 <style data-shopify>#section-template--14146668527667__main{padding-top: 0px;
     padding-bottom: 50px;}
   @@media (min-width: 768px) and (max-width: 991px) {
@@ -126,6 +136,10 @@
     #section-template--14146668527667__main{padding-top: 0px;
       padding-bottom: 50px;}
   }</style>
+
+
+
+
 </div><div id="shopify-section-template--14146668527667__contact-form" class="shopify-section">
 <!-- Google Map End -->
 <!-- Contact Email Area Start -->
@@ -136,6 +150,8 @@
         <h3 class="mb-5">Contact Us</h3>
         <p class="text-capitalize mb-40">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         <form method="post" action="https://bigon-5.myshopify.com/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form"><input type="hidden" name="form_type" value="contact" /><input type="hidden" name="utf8" value="✓" />
+        
+        
         <div class="address-wrapper row">
           <div class="col-md-6">
             <div class="address-fname">
@@ -170,6 +186,7 @@
   </div>
 </div>
 <!-- Contact Email Area End -->
+
 <style data-shopify>#section-template--14146668527667__contact-form{padding-top: 0px;
     padding-bottom: 50px;}
   @@media (min-width: 768px) and (max-width: 991px) {
@@ -180,7 +197,12 @@
     #section-template--14146668527667__contact-form{padding-top: 0px;
       padding-bottom: 45px;}
   }</style>
+
+
+
+
 </div>
+
 @section breadcrumbs {
     <div class="breadcrumbs-section ptb-50">
         <div class="breadcrumbs">
@@ -188,26 +210,39 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="breadcrumbs-inner">
+
                             <nav class="" role="navigation" aria-label="breadcrumbs">
                                 <ul class="breadcrumb-list">
                                     <li>
                                         <a asp-controller="home" asp-action="index" title="Back to the home page">Home</a>
                                     </li>
                                     <li>
+
                                         <span>contact</span>
+
                                     </li>
                                 </ul>
                             </nav>
+
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- BREADCRUMBS SETCTION END -->
+
     <style>
+
         .breadcrumbs-section .breadcrumbs-inner {
             background-color: #f5f5f5;
         }
+
     </style>
+
+
+
+
 }

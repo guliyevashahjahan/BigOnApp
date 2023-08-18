@@ -1,6 +1,7 @@
 using BigOn_WebUI.Models.Persistences;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace BigOn_WebUI
 {
     public class Program
@@ -11,9 +12,19 @@ namespace BigOn_WebUI
 
             builder.Services.AddControllersWithViews();
             builder.Services.AddDbContext<DataContext>(
-                cfg => { cfg.UseSqlServer(builder.Configuration.GetConnectionString("cstring"));
+                cfg => {
+                    cfg.UseSqlServer(builder.Configuration.GetConnectionString("cString"),
+                    opt =>
+                    {
+                        opt.MigrationsHistoryTable("Migrations");
+                    });
 
-                });
+                    });
+
+            builder.Services.AddRouting(cfg =>
+            {
+                cfg.LowercaseUrls = true;
+            });
 
             var app = builder.Build();
 
