@@ -1,3 +1,4 @@
+using BigOn_WebUI.AppCode.Services;
 using BigOn_WebUI.Models.Persistences;
 using Microsoft.EntityFrameworkCore;
 
@@ -25,6 +26,13 @@ namespace BigOn_WebUI
             {
                 cfg.LowercaseUrls = true;
             });
+
+            builder.Services.Configure<EmailOptions>(cfg => {
+
+                builder.Configuration.GetSection("emailAccount").Bind(cfg);
+                });
+
+            builder.Services.AddSingleton<EmailService>();
 
             var app = builder.Build();
 
