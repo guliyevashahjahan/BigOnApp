@@ -40,6 +40,10 @@ namespace BigOn_WebUI
             app.UseRouting();
             app.UseEndpoints(endpoints =>
             {
+
+                endpoints.MapControllerRoute(
+                    name: "Areas",
+                  pattern: "{area:exists}/{controller=dashboard}/{action=index}/{id?}");
                 endpoints.MapControllerRoute("default", "{controller=home}/{action=index}/{id?}");
                 });
 
