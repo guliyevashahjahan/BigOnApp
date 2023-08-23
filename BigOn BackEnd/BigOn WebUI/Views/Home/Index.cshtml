@@ -13058,29 +13058,35 @@
   
 </style> 
 </div>
+@section addjs {
+    <script>
+        $(document).ready(function () {
+            $('form.contact-form').submit(function (e) {
+                e.preventDefault();
+
+                let formData = new FormData(e.currentTarget);
+
+                $.ajax({
+                    url: '@Url.Action("Subscribe")',
+                    type: 'POST',
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    success: function (response) {
+                        if(response.error==true){
+                            toastr.error(response.message, "Error");
+                            return;
+                        }
+                        toastr.success(response.message, "Success");
+                    },
+                    error: function (response) {
+                        toastr.error("Try again later","Error")
+                    }
+                })
+            })
+        });
+    </script>
 
 
-<script>
-    $(document).ready(function() {
-    $('form.contact-form').submit(function(e){
-        e.preventDefault();
+}
 
-        let formData = new FormData(e.currentTarget);
-
-        $.ajax({
-            url : '@Url.Action("Subscribe")',
-            type : 'POST',
-            data : formData,
-            contentType : false,
-            processData : false,
-            success : function(response){
-                console.log(response)
-            },
-            error : function(response){
-                console.error(response)
-            }
-        })
-    })
-    });
-</script>
-	

@@ -29,12 +29,12 @@ namespace BigOn_WebUI
 
             builder.Services.Configure<EmailOptions>(cfg => {
 
-                builder.Configuration.GetSection("emailAccount").Bind(cfg);
+                builder.Configuration.GetSection(cfg.GetType().Name).Bind(cfg);
                 });
 
-            builder.Services.AddSingleton<EmailService>();
+            builder.Services.AddSingleton<IEmailService, EmailService>();
 
-            var app = builder.Build();
+            var app = builder.Build(); 
 
             app.UseStaticFiles();
             app.UseRouting();

@@ -5,32 +5,36 @@ using System.Net;
 
 namespace BigOn_WebUI.AppCode.Services
 {
-    public class EmailService
+    public class EmailService : SmtpClient, IEmailService
     {
        readonly EmailOptions options;
 
         public EmailService(IOptions<EmailOptions> options)
         {
             this.options = options.Value;
+
+            this.Host = this.options.SmtpServer;
+            this.Port = this.options.SmtpPort;
+
+            this.EnableSsl = true;
+            this.Credentials = new NetworkCredential(this.options.UserEmail, this.options.Password);
         }
 
         public async Task <bool> SendMailAsync (string to, string subject, string body)
         {
-            try
+            try 
             {
-                using (SmtpClient client = new SmtpClient(options.SmtpServer, options.SmtpPort))
+            
                 using (MailMessage message = new MailMessage())
                 {
 
-                    client.EnableSsl = true;
-                    client.Credentials = new NetworkCredential(options.UserEmail, options.Password);
                     message.Subject = subject;
                     message.Body = body;
                     message.IsBodyHtml = true;
                     message.To.Add(to);
                     message.From = new MailAddress(options.UserEmail, options.DisplayName);
 
-                    await client.SendMailAsync(message);
+                    await base.SendMailAsync(message);
 
                 }
 

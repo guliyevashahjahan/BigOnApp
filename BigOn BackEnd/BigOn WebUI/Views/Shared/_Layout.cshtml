@@ -56,8 +56,9 @@
   <link href="~/cdn.shopify.com/s/files/1/0019/7181/4451/t/10/assets/defaultb5ac.css?v=62476485006802894951632031650" rel="stylesheet" type="text/css" media="all" />
   <link href="~/cdn.shopify.com/s/files/1/0019/7181/4451/t/10/assets/style70c5.css?v=128604472815058613891632031681" rel="stylesheet" type="text/css" media="all" />
   <link href="~/cdn.shopify.com/s/files/1/0019/7181/4451/t/10/assets/responsivec651.css?v=62746946094098128581632031678" rel="stylesheet" type="text/css" media="all" />
- 
-  <link href="~/cdn.shopify.com/s/files/1/0019/7181/4451/t/10/assets/customc53a.css?v=49480689088454032641637495362" rel="stylesheet" type="text/css" media="all" />
+  <link href="~/libraries/toastr.js/toastr.css" rel="stylesheet" type="text/css" media="all" />
+
+    <link href="~/cdn.shopify.com/s/files/1/0019/7181/4451/t/10/assets/customc53a.css?v=49480689088454032641637495362" rel="stylesheet" type="text/css" media="all" />
   
   <link href="~/cdn.shopify.com/s/files/1/0019/7181/4451/t/10/assets/custom-responsive1515.css?v=45972842751872550531632031650" rel="stylesheet" type="text/css" media="all" />
   
@@ -3229,7 +3230,13 @@ for (var attr in meta) {
 		   ga('send', 'pageview');
 
 	  </script>
+    <script src="~/libraries/toastr.js/toastr.min.js"></script>
+    <script src="~/assets/js/toastr-additional.js"></script>
+
    
+      @RenderSection("addjs",required:false);
+
+
 </body>
 
 <!-- Mirrored from bigon-5.myshopify.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Sep 2022 14:12:00 GMT -->
