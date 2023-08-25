@@ -12,6 +12,8 @@ namespace BigOn_WebUI.Models.Persistences
 
         }
         public DbSet<Subscriber> Subscribers { get; set; }
+        public DbSet<Color> Colors { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
