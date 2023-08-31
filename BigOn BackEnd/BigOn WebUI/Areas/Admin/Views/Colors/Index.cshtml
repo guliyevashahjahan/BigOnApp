@@ -63,10 +63,10 @@
                                 <td>@item.Name</td>
                               
                                 <td class="d-flex justify-content-end">
-                                    <a class="btn btn-info" asp-action="create"><i class="fa-solid fa-eye"></i></a>
-                                    <a class="btn btn-warning ml-3 mr-3" asp-action="create"><i class="fa-solid fa-pencil"></i></a>
+                                    <a class="btn btn-info" asp-action="details" asp-route-id="@item.Id"><i class="fa-solid fa-eye"></i></a>
+                                    <a class="btn btn-warning ml-3 mr-3" asp-action="edit" asp-route-id="@item.Id"><i class="fa-solid fa-pencil"></i></a>
 
-                                    <a class="btn btn-danger" asp-action="create"><i class="fa-solid fa-trash"></i></a>
+                                    <a class="btn btn-danger" onclick="removeEntity(@item.Id,'@item.Name')"><i class="fa-solid fa-trash"></i></a>
                                 </td>
                             </tr>
                         }
@@ -77,3 +77,40 @@
         </div>
     </div>
     </div>
+@section addjs {
+    <script src="~/libraries/sweetalert/sweetalert.min.js"></script>
+        <script>
+            function removeEntity(id,name){
+            swal({
+                title: "Are you sure?",
+                text: "Once deleted, you will not be able to recover this file!",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+                .then((willDelete) => {
+                    if (willDelete) {
+                        let obj = { id };
+                        $.ajax({
+                            url:'@Url.Action("delete")',
+                            type : 'POST',
+                            data : obj,
+                            success: function (response) {
+                                if (response.error == true) {
+                                    toastr.error(response.message, "Error!");
+                                    return;
+                                }
+                                toastr.success(response.message,"Success!")
+                                setTimeout(function () {
+                                    window.location.reload();
+                                },2000)
+                            },
+                            error: function (response) {
+                                console.warn(response)
+                            }
+                        });
+                    }
+                });
+            }
+        </script>
+    }
