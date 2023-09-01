@@ -1,9 +1,8 @@
-﻿
-@model IEnumerable<Color>
-
+﻿@model IEnumerable<Brand>
 @{
     ViewData["Title"] = "Index";
 }
+
 
 <div class="page-header">
     <div class="row align-items-end">
@@ -49,38 +48,33 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>Hex Code</th>
                             <th>Name</th>
-                          
+
                             <th class="d-flex justify-content-end"><a class="btn btn-success" asp-action="create"><i class="fa-solid fa-plus"></i></a></th>
                         </tr>
                     </thead>
-                    <tbody>
-                        @foreach (var item in Model)
-                        {
-                            <tr>
-                                <td><span class="color" style="background-color:@item.HexCode"></span></td>
-                                <td>@item.Name</td>
-                              
-                                <td class="d-flex justify-content-end">
-                                    <a class="btn btn-info" asp-action="details" asp-route-id="@item.Id"><i class="fa-solid fa-eye"></i></a>
-                                    <a class="btn btn-warning ml-3 mr-3" asp-action="edit" asp-route-id="@item.Id"><i class="fa-solid fa-pencil"></i></a>
-
-                                    <a class="btn btn-danger" onclick="removeEntity(@item.Id,'@item.Name')"><i class="fa-solid fa-trash"></i></a>
-                                </td>
-                            </tr>
-                        }
-                       
+                    <tbody id="body">
+                       <partial name="_Body" model="@Model"/>
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
-    </div>
+</div>
 @section addjs {
     <script src="~/libraries/sweetalert/sweetalert.min.js"></script>
-        <script>
-            function removeEntity(id,name){
+    <script>
+        function getHeaderList(str) {
+            let headers = {};
+            str.split(/(\n|\r|\r\n)+/g).forEach(item => {
+                let [key, value] = item.split(': ');
+                if (value) {
+                    headers[key] = decodeURI((value || '').replace(/\+/g, ' '));
+                }
+            })
+            return headers;
+        }
+        function removeEntity(id, name) {
             swal({
                 title: "Are you sure?",
                 text: "Once deleted, you will not be able to recover this file!",
@@ -92,25 +86,29 @@
                     if (willDelete) {
                         let obj = { id };
                         $.ajax({
-                            url:'@Url.Action("delete")',
-                            type : 'POST',
-                            data : obj,
-                            success: function (response) {
-                                if (response.error == true) {
-                                    toastr.error(response.message, "Error!");
+                            url: '@Url.Action("delete")',
+                            type: 'POST',
+                            data: obj,
+                            success: function (response,status,xhr) {
+
+                                let headers = getHeaderList(xhr.getAllResponseHeaders());
+                                if (headers['error'] == 'true') {
+                                    toastr.error(headers['message'], "Error!");
                                     return;
                                 }
-                                toastr.success(response.message,"Success!")
-                                setTimeout(function () {
-                                    window.location.reload();
-                                },2000)
+                                toastr.success("Deleted successfully", "Success!");
+                                $("#body").html(response);
+                                // toastr.success(response.message, "Success!")
+                                // setTimeout(function () {
+                                //     window.location.reload();
+                                // }, 2000)
                             },
-                            error: function (response) {
-                                console.warn(response)
+                            error: function (response,xhr) {
+                                console.warn(response,xhr)
                             }
                         });
                     }
                 });
-            }
-        </script>
+        }
+    </script>
     }

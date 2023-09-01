@@ -1,6 +1,6 @@
 ﻿namespace BigOn_WebUI.Models.Entities.Commons
 {
-    public abstract class AuditableEntity
+    public abstract class AuditableEntity :IAuditableEntity
     {
         public int CreatedBy { get; set; }
         public DateTime CreatedAt { get; set; }

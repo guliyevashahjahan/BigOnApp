@@ -28,8 +28,6 @@ namespace BigOn_WebUI.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult Create(Color model)
         {
-            model.CreatedAt = DateTime.Now;
-            model.CreatedBy = 1;
             db.Colors.Add(model);
             db.SaveChanges();
             return RedirectToAction(nameof(Index));
@@ -57,8 +55,6 @@ namespace BigOn_WebUI.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult Edit(Color model)
         {
-            model.LastModifiedAt = DateTime.Now;
-            model.LastModifiedBy = 1;
             db.Entry(model).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
             db.Entry(model).Property(m => m.CreatedAt).IsModified = false;
             db.Entry(model).Property(m=> m.CreatedBy).IsModified = false;
@@ -78,8 +74,7 @@ namespace BigOn_WebUI.Areas.Admin.Controllers
 
                 });
             }
-            model.DeletedAt = DateTime.Now;
-            model.DeletedBy = 1;
+            db.Colors.Remove(model);
             db.SaveChanges();
             return Json(new
             {

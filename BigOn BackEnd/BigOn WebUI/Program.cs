@@ -33,6 +33,10 @@ namespace BigOn_WebUI
                 });
 
             builder.Services.AddSingleton<IEmailService, EmailService>();
+            builder.Services.AddSingleton<IDateTimeService, DateTimeService>();
+            builder.Services.AddScoped<IIdentityService, IdentityService>();
+
+
 
             var app = builder.Build(); 
 
