@@ -1,81 +1,67 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using BigOn_WebUI.Models.Persistences;
-using BigOn_WebUI.Models.Entities;
+﻿using BigOn.Business.Modules.ColorsModule.Commands.ColorAddCommand;
+using BigOn.Business.Modules.ColorsModule.Commands.ColorEditCommand;
+using BigOn.Business.Modules.ColorsModule.Commands.ColorRemoveCommand;
+using BigOn.Business.Modules.ColorsModule.Queries.ColorGetAllQuery;
+using BigOn.Business.Modules.ColorsModule.Queries.ColorGetByIdQuery;
+using MediatR;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BigOn_WebUI.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class ColorsController : Controller
     {
-        private readonly DataContext db;
+        private readonly IMediator mediator;
 
-        public ColorsController(DataContext db)
+        public ColorsController(IMediator mediator)
         {
-            this.db = db;
+            this.mediator = mediator;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index(ColorGetAllRequest request)
         {
-            var colors = db.Colors.Where(m=>m.DeletedBy == null).ToList();
-            return View(colors);
+          var response =await mediator.Send(request);
+
+            return View(response);
+        }
+        public async Task<IActionResult> Details(ColorGetByIdRequest request)
+        {
+           var response = await mediator.Send(request);
+
+            return View(response);
         }
         public IActionResult Create()
         {
-           
+
             return View();
         }
         [HttpPost]
-        public IActionResult Create(Color model)
+        public async Task<IActionResult> Create(ColorAddRequest request)
         {
-            db.Colors.Add(model);
-            db.SaveChanges();
+           var response =  await mediator.Send(request);
             return RedirectToAction(nameof(Index));
         }
-        public IActionResult Details(int id)
+        public async Task<IActionResult> Edit(ColorGetByIdRequest request)
         {
-            var model = db.Colors.FirstOrDefault(m=>m.Id==id);
-            if (model == null)
-            {
-                return NotFound();
-            }
 
-            return View(model);
-        }
-        public IActionResult Edit(int id)
-        {
-            var model = db.Colors.FirstOrDefault(m => m.Id == id);
-            if (model == null)
-            {
-                return NotFound();
-            }
-            return View(model);
+            var response = await mediator.Send(request);
+
+            return View(response);
         }
 
         [HttpPost]
-        public IActionResult Edit(Color model)
+        public async Task<IActionResult> Edit(ColorEditRequest request)
         {
-            db.Entry(model).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
-            db.Entry(model).Property(m => m.CreatedAt).IsModified = false;
-            db.Entry(model).Property(m=> m.CreatedBy).IsModified = false;
-            db.SaveChanges();
+
+            await mediator.Send(request);
             return RedirectToAction(nameof(Index));
         }
-        [HttpPost]
-        public IActionResult Delete(int id)
-        {
-          var model =  db.Colors.FirstOrDefault(m => m.Id == id && m.DeletedBy ==null);
-            if (model == null)
-            {
-                return Json(new
-                {
-                   error=true,
-                   message = "This item doesn't exist."
 
-                });
-            }
-            db.Colors.Remove(model);
-            db.SaveChanges();
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(ColorRemoveRequest request)
+        {
+           await mediator.Send(request);
             return Json(new
             {
                 error = false,
@@ -83,5 +69,7 @@ namespace BigOn_WebUI.Areas.Admin.Controllers
 
             });
         }
+
+
     }
 }
