@@ -1,16 +1,28 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BigOn.Business.Modules.BlogPostModule.Queries.BlogPostGetAllQuery;
+using BigOn.Business.Modules.BlogPostModule.Queries.BlogPostGetBySlugQuery;
+using MediatR;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BigOn_WebUI.Controllers
 {
     public class BlogsController : Controller
     {
-        public IActionResult Index()
+        private readonly IMediator mediator;
+
+        public BlogsController(IMediator mediator)
         {
-            return View();
+            this.mediator = mediator;
         }
-        public IActionResult Details()
+        public async Task<IActionResult> Index(BlogPostGetAllRequest request)
         {
-            return View();
+            var model = await mediator.Send(request);
+            return View(model);
+        }
+        [Route("blogs/{slug}")]
+        public async Task<IActionResult> Details(BlogPostGetBySlugRequest request)
+        {
+            var model = await mediator.Send(request);
+            return View(model);
         }
     }
 }

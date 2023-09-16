@@ -1,4 +1,5 @@
-﻿
+﻿@using BigOn.Business.Modules.BlogPostModule.Queries.BlogPostGetByIdQuery
+@model BlogPostGetByIdDto
 @{
     ViewData["Title"] = "Details";
 }
@@ -11,7 +12,7 @@
         <!-- Blog Details Start -->
         <div class="blog-details">
           <div class="blog-img">
-            <img src="../../../cdn.shopify.com/s/files/1/0019/7181/4451/articles/121cb3.jpg?v=1523771328" alt="blog-image">
+            <img src="~/uploads/images/@Model.ImagePath" alt="blog-image">
           </div>
           <div class="post-info">
             <div class="post-info-left">
@@ -26,8 +27,10 @@
               1 comment
             </div>
           </div>
-          <h3 class="semi-title">Temporibus autem quibusdam</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h3 class="semi-title">@Model.Title</h3>
+         <div>
+             @Html.Raw(Model.Body)
+         </div>
 <blockquote>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño.</blockquote>
 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
           <!--  Blog-Share Start  -->
@@ -36,17 +39,14 @@
               <div class="col-lg-7 col-md-7 col-sm-6">
                 <span class="pull-left">TAGS :</span>
                 <ul class="list-inline">
-                  
-                  <li><a href="tagged/bestselling.html">bestselling</a></li>
-                  
-                  <li><a href="tagged/chair.html">chair</a></li>
-                  
-                  <li><a href="tagged/collection.html">collection</a></li>
-                  
-                  <li><a href="tagged/door.html">door</a></li>
-                  
-                  <li><a href="tagged/dress.html">dress</a></li>
-                  
+                    @if (Model.Tags?.Length>0)
+                                        {
+                                            @foreach (var item in Model.Tags)
+                                            {
+                                                <li><a asp-action="Index" asp-route-tag="@item">@item</a></li>
+                                            }
+                                        }
+               
                 </ul>
               </div>
               <div class="col-lg-5 col-md-5 col-sm-6">
@@ -11569,18 +11569,14 @@
     <h3 class="sidebar-title mb-30">Tags</h3>
     
     <ul class="tag-list">
-      
-      
-      <li><a href="tagged/bestselling.html" class="">bestselling</a></li>
-      
-      <li><a href="tagged/chair.html" class="">chair</a></li>
-      
-      <li><a href="tagged/collection.html" class="">collection</a></li>
-      
-      <li><a href="tagged/door.html" class="">door</a></li>
-      
-      <li><a href="tagged/dress.html" class="">dress</a></li>
-      
+        @if (Model.Tags?.Length>0)
+                                {
+                                    @foreach (var item in Model.Tags)
+                                    {
+                                        <li><a asp-action="Index" asp-route-tag="@item">@item</a></li>
+                                    }
+                                }
+                              
     </ul>
   </div>
   <!-- Meta Post End -->
@@ -11656,12 +11652,12 @@
 <nav class="" role="navigation" aria-label="breadcrumbs">
   <ul class="breadcrumb-list">
     <li>
-      <a href="../../index.html" title="Back to the home page">Home</a>
+      <a asp-controller="Home" asp-action="Index">Home</a>
     </li>
     <li>
       
-      <a href="../news.html" title="">News</a>
-      <span>Temporibus autem quibusdam</span>
+      <a asp-action="Index">Blogs</a>
+      <span>@Model.Title</span>
       
     </li>
   </ul>

@@ -10,5 +10,9 @@ namespace BigOn.Infrastructure.Repositories
 {
     public interface IBlogPostRepository : IRepository<BlogPost>
     {
+        void ResolveTags(BlogPost blogPost, string[] tags);
+        IQueryable<Tag> GetTagsByBlogPostId(int blogPostId);
+
+        IQueryable<Tag> GetUsedTags();
     }
 }

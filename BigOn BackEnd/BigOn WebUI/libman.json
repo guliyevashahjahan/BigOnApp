@@ -9,6 +9,18 @@
     {
       "library": "sweetalert@2.1.2",
       "destination": "wwwroot/libraries/sweetalert/"
+    },
+    {
+      "library": "jquery-treegrid@0.2.0",
+      "destination": "wwwroot/libraries/jquery-treegrid/"
+    },
+    {
+      "library": "select2@4.0.13",
+      "destination": "wwwroot/libraries/select2/"
+    },
+    {
+      "library": "ckeditor5@39.0.2",
+      "destination": "wwwroot/libraries/ckeditor5/"
     }
   ]
 }

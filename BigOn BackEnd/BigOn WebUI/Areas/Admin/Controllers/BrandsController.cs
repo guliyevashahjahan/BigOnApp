@@ -56,24 +56,7 @@ namespace BigOn_WebUI.Areas.Admin.Controllers
         public async Task<IActionResult> Delete(BrandRemoveRequest request)
         {
           await  mediator.Send(request);
-            //var model = db.Brands.FirstOrDefault(m => m.Id == id && m.DeletedBy == null);
-            //if (model == null)
-            //{
-            //    Response.Headers.Add("error", "true");
-            //    string text = HttpUtility.UrlEncode("This item doesn't exist.");
-            //    Response.Headers.Add("message", text);
-            //    return Content("");
-            //    //return Json(new
-            //    //{
-            //    //    error = true,
-            //    //    message = "This item doesn't exist."
-
-            //    //});
-            //}
-            //db.Brands.Remove(model);
-            //db.SaveChanges();
-
-            // var brands = db.Brands.Where(m => m.DeletedBy == null).ToList();
+         
             var newRequest =new BrandGetAllRequest();
            var brands =  await mediator.Send(newRequest);
           

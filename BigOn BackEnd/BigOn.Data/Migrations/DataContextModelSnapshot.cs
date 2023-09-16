@@ -83,6 +83,21 @@ namespace BigOn_WebUI.Migrations
                     b.ToTable("BlogPosts", (string)null);
                 });
 
+            modelBuilder.Entity("BigOn.Infrastructure.Entities.BlogPostTag", b =>
+                {
+                    b.Property<int>("TagId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("BlogPostId")
+                        .HasColumnType("int");
+
+                    b.HasKey("TagId", "BlogPostId");
+
+                    b.HasIndex("BlogPostId");
+
+                    b.ToTable("BlogPostTags", (string)null);
+                });
+
             modelBuilder.Entity("BigOn.Infrastructure.Entities.Brand", b =>
                 {
                     b.Property<int>("Id")
@@ -509,11 +524,62 @@ namespace BigOn_WebUI.Migrations
                     b.ToTable("Subscribers", (string)null);
                 });
 
+            modelBuilder.Entity("BigOn.Infrastructure.Entities.Tag", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime");
+
+                    b.Property<int>("CreatedBy")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime");
+
+                    b.Property<int?>("DeletedBy")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("LastModifiedAt")
+                        .HasColumnType("datetime");
+
+                    b.Property<int?>("LastModifiedBy")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Tags", (string)null);
+                });
+
             modelBuilder.Entity("BigOn.Infrastructure.Entities.BlogPost", b =>
                 {
                     b.HasOne("BigOn.Infrastructure.Entities.Category", null)
                         .WithMany()
                         .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("BigOn.Infrastructure.Entities.BlogPostTag", b =>
+                {
+                    b.HasOne("BigOn.Infrastructure.Entities.BlogPost", null)
+                        .WithMany()
+                        .HasForeignKey("BlogPostId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("BigOn.Infrastructure.Entities.Tag", null)
+                        .WithMany()
+                        .HasForeignKey("TagId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
                 });

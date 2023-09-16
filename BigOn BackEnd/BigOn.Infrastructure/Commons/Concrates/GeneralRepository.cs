@@ -12,7 +12,7 @@ namespace BigOn.Infrastructure.Commons.Concrates
     public class GeneralRepository<T> : IRepository<T>
         where T : class
     {
-        private readonly DbContext db;
+        protected readonly DbContext db;
         private readonly DbSet<T> table;
         public GeneralRepository(DbContext db)
         {
@@ -40,13 +40,19 @@ namespace BigOn.Infrastructure.Commons.Concrates
             return table.FirstOrDefault(predicate);
         }
 
-        public IQueryable<T> GetAll(Expression<Func<T, bool>> predicate = null)
+        public IQueryable<T> GetAll(Expression<Func<T, bool>> predicate = null,bool tracking=true)
         {
-            if (predicate == null)
+            var query = table.AsQueryable();
+            if (!tracking)
             {
-                return table.AsQueryable();
+                query = table.AsNoTracking();
             }
-            return table.Where(predicate).AsQueryable();
+            if (predicate != null)
+            {
+                query = query.Where(predicate);
+            }
+          
+            return query;
         }
 
         public void Remove(T model)
