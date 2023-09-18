@@ -22,9 +22,8 @@ namespace BigOn.Infrastructure.Commons.Concrates
 
         public IEnumerable<T> Items { get; set; }
 
-        public PagedResponse(IEnumerable<T> items, int count, IPageable pageable)
+        public PagedResponse(int count, IPageable pageable)
         {
-            this.Items = items;
             this.Count = count;
             this.Size = pageable.Size;
             this.Page = pageable.Page > this.Pages ? this.Pages : pageable.Page;

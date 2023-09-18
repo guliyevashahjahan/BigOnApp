@@ -2,6 +2,7 @@
 using BigOn.Infrastructure.Commons.Concrates;
 using Microsoft.AspNetCore.Html;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Abstractions;
 using Microsoft.AspNetCore.Mvc.Routing;
 using System;
 using System.Collections.Generic;
@@ -22,18 +23,16 @@ namespace BigOn.Infrastructure.Extensions
             {
                 query = query.OrderByDescending(orderExpression);
             }
-            int maxPage = (int)Math.Ceiling((count * 1D / pageable.Size));
-            if (pageable.Page < maxPage)
-            {
-               maxPage = pageable.Page;
-            }
-            var items = query.Skip((maxPage - 1) * pageable.Size).Take(pageable.Size);
+            var response = new PagedResponse<T>(count, pageable);
 
-            return new PagedResponse<T>(items, count, pageable);
+            var items = query.Skip((response.Page - 1) * response.Size).Take(response.Size);
+            response.Items = items;
+            return response;
         }
 
 
-        static public IHtmlContent ToPager<T>(this IUrlHelper urlHelper, IPagedResponse<T> context, string area = "", string controller = "", string action = "index")
+        static public IHtmlContent ToPager<T>(this IUrlHelper urlHelper, IPagedResponse<T> context, 
+            ActionDescriptor actionDescriptor)
             where T : class
         {
             int maxNumberButton = 10;
@@ -45,9 +44,9 @@ namespace BigOn.Infrastructure.Extensions
             {
                 var link = urlHelper.Action(new UrlActionContext
                 {
-                    Controller = controller,
-                    Action = action,
-                    Values = new { area = area, page = context.Page - 1, size = context.Size }
+                    Controller = actionDescriptor.RouteValues["controller"],
+                    Action = actionDescriptor.RouteValues["action"],
+                    Values = new { area = actionDescriptor.RouteValues["area"], page = context.Page - 1, size = context.Size }
                 });
                 sb.Append(@$" <li class='prev'>
              <a href='{link}'>
@@ -73,7 +72,7 @@ namespace BigOn.Infrastructure.Extensions
                 max = min + maxNumberButton - 1;
             }
 
-            if (max> context.Page)
+            if (max> context.Pages)
             {
                 max = context.Pages;
                 min = max - maxNumberButton + 1;
@@ -89,10 +88,10 @@ namespace BigOn.Infrastructure.Extensions
                 {
                     var link = urlHelper.Action(new UrlActionContext
                     {
-                        Controller = controller,
-                        Action = action,
-                        Values = new { area = area, page = i, size = context.Size }
-                    });
+                        Controller = actionDescriptor.RouteValues["controller"],
+                        Action = actionDescriptor.RouteValues["action"],
+                        Values = new { area = actionDescriptor.RouteValues["area"], page = i, size = context.Size }
+                    }); ;
                     sb.Append(@$"<a href='{link}'>{i}</a>");
                 }
                 sb.Append("</li>");
@@ -102,9 +101,9 @@ namespace BigOn.Infrastructure.Extensions
             {
                 var link = urlHelper.Action(new UrlActionContext
                 {
-                    Controller = controller,
-                    Action = action,
-                    Values = new { area = area, page = context.Page + 1, size = context.Size }
+                    Controller = actionDescriptor.RouteValues["controller"],
+                    Action = actionDescriptor.RouteValues["action"],
+                    Values = new { area = actionDescriptor.RouteValues["area"], page = context.Page + 1, size = context.Size }
                 });
                 sb.Append(@$"<li class='next'><a href='{link}' title='Next'>
                    <span aria-hidden='true'><i class='fa fa-angle-right' aria-hidden='true'></i>

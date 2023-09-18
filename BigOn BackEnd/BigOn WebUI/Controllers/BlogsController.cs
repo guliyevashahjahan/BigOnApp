@@ -1,5 +1,6 @@
 ﻿using BigOn.Business.Modules.BlogPostModule.Queries.BlogPostGetAllQuery;
 using BigOn.Business.Modules.BlogPostModule.Queries.BlogPostGetBySlugQuery;
+using BigOn.Business.Modules.BlogPostModule.Queries.BlogPostRecentsQuery;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,6 +17,7 @@ namespace BigOn_WebUI.Controllers
         public async Task<IActionResult> Index(BlogPostGetAllRequest request)
         {
             var model = await mediator.Send(request);
+           
             return View(model);
         }
         [Route("blogs/{slug}")]

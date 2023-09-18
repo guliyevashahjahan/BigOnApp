@@ -1,4 +1,5 @@
 ﻿@using BigOn.Business.Modules.BlogPostModule.Queries.BlogPostGetAllQuery
+@using BigOn.Infrastructure.Entities;
 @model IPagedResponse<BlogPostGetAllDto>
 @{
     ViewData["Title"] = "Index";
@@ -56,7 +57,7 @@
                         <div class="breadcrumb-list-item">
 
                             <div class="shop-pagination text-center breadcrumb-list-item ">
-                               @Url.ToPager(Model, controller:"Blogs")
+                               @Url.ToPager(Model, ViewContext.ActionDescriptor)
                             </div>
 
 
@@ -86,7 +87,7 @@
 
 
                         <!-- Single Sidebar Start  -->
-                        <div class="categorie recent-post same-sidebar category-sub-menu sidebar-widget mb-40">
+                        <div class="categorie recent-post same-sidebar category- sub-menu sidebar-widget mb-40">
                             <h3 class="sidebar-title mt-30">Custom Menu</h3><ul class="sidebar-list">
 
 
@@ -174,53 +175,9 @@
                         </div>
                         <!-- Single Sidebar End  -->
 
+                        @await Component.InvokeAsync("RecentPosts")
 
-
-
-                        <div class="recent-post same-sidebar sidebar-widget mb-40">
-
-                            <h3 class="sidebar-title mb-30">Recent Post</h3>
-
-                            <ul>
-
-
-                                <!-- Singel Post Thumb Start -->
-                                <li class="post-thumb fix">
-                                    <div class="left-post-thumb f-left mr-20">
-                                        <a href="news/temporibus-autem-quibusdam-3.html"><img class="img" src="~/cdn.shopify.com/s/files/1/0019/7181/4451/articles/12_50X50_crop_center1cb3.jpg?v=1523771328" alt=""></a>
-                                    </div>
-                                    <div class="right-post-thumb fix">
-                                        <h4><a href="news/temporibus-autem-quibusdam-3.html">Temporibus autem quibusdam</a></h4>
-                                        <span>Apr 15, 2018</span>
-                                    </div>
-                                </li>
-                                <!-- Singel Post Thumb End -->
-                                <!-- Singel Post Thumb Start -->
-                                <li class="post-thumb fix">
-                                    <div class="left-post-thumb f-left mr-20">
-                                        <a href="news/temporibus-autem-quibusdam-2.html"><img class="img" src="~/cdn.shopify.com/s/files/1/0019/7181/4451/articles/9_50X50_crop_centera666.jpg?v=1523771309" alt=""></a>
-                                    </div>
-                                    <div class="right-post-thumb fix">
-                                        <h4><a href="news/temporibus-autem-quibusdam-2.html">Temporibus autem quibusdam</a></h4>
-                                        <span>Apr 15, 2018</span>
-                                    </div>
-                                </li>
-                                <!-- Singel Post Thumb End -->
-                                <!-- Singel Post Thumb Start -->
-                                <li class="post-thumb fix">
-                                    <div class="left-post-thumb f-left mr-20">
-                                        <a href="news/temporibus-autem-quibusdam-1.html"><img class="img" src="~/cdn.shopify.com/s/files/1/0019/7181/4451/articles/6_50X50_crop_centereebd.jpg?v=1523771291" alt=""></a>
-                                    </div>
-                                    <div class="right-post-thumb fix">
-                                        <h4><a href="news/temporibus-autem-quibusdam-1.html">Temporibus autem quibusdam</a></h4>
-                                        <span>Apr 15, 2018</span>
-                                    </div>
-                                </li>
-                                <!-- Singel Post Thumb End -->
-
-                            </ul>
-                        </div>
-                        <!-- Recent Post End -->
+                       
                         <!-- Category Post Start -->
                         <div class="categorie recent-post same-sidebar sidebar-widget mb-40">
 
