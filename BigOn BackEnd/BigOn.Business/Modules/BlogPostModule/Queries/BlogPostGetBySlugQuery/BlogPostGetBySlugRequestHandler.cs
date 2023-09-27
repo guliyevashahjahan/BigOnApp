@@ -1,13 +1,7 @@
-﻿using BigOn.Business.Modules.BlogPostModule.Queries.BlogPostGetAllQuery;
-using BigOn.Business.Modules.BlogPostModule.Queries.BlogPostGetByIdQuery;
+﻿using BigOn.Business.Modules.BlogPostModule.Queries.BlogPostGetByIdQuery;
 using BigOn.Infrastructure.Repositories;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BigOn.Business.Modules.BlogPostModule.Queries.BlogPostGetBySlugQuery
 {
@@ -34,13 +28,16 @@ namespace BigOn.Business.Modules.BlogPostModule.Queries.BlogPostGetBySlugQuery
                              Slug = bp.Slug,
                              ImagePath = bp.ImagePath,
                              PublishedAt = bp.PublishedAt,
+                             PublishedBy = bp.PublishedBy,
                              CategoryId = bp.CategoryId,
                              CategoryName = c.Name
-
                          });
 
             var data = await query.FirstOrDefaultAsync(cancellationToken);
+           
             data.Tags = await blogPostRepository.GetTagsByBlogPostId(data.Id).Select(m => m.Text).ToArrayAsync(cancellationToken);
+           
+            data.Comments = blogPostRepository.CommentCounts(data.Id);
             return data;
         }
     }

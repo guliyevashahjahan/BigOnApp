@@ -17,3 +17,13 @@ toastr.options = {
     "showMethod": "fadeIn",
     "hideMethod": "fadeOut"
 }
+
+window.addEventListener('load', function(){
+    [...document.querySelectorAll('.pcoded-navbar ul:not(:has(li))')].forEach(item => {
+        let parent = item.closest('li.pcoded-hasmenu');
+        if (parent == null) return;
+        parent.parentElement.removeChild(parent);
+    })
+
+
+})

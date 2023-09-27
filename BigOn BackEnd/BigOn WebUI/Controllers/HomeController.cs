@@ -3,6 +3,7 @@ using BigOn.Infrastructure.Entities;
 using BigOn.Infrastructure.Extensions;
 using BigOn.Infrastructure.Repositories;
 using BigOn.Infrastructure.Services.Abstracts;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Globalization;
@@ -12,6 +13,7 @@ using System.Web;
 
 namespace BigOn_WebUI.Controllers
 {
+    [AllowAnonymous]
     public class HomeController : Controller
     {
         private readonly ISubscriberRepository subscriberRepository;

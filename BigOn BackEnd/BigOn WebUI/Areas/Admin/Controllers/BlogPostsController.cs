@@ -10,6 +10,7 @@ using BigOn.Business.Modules.ColorsModule.Queries.ColorGetByIdQuery;
 using BigOn.Infrastructure.Entities;
 using BigOn.Infrastructure.Services.Abstracts;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -25,11 +26,13 @@ namespace BigOn_WebUI.Areas.Admin.Controllers
         {
             this.mediator = mediator;
         }
+        [Authorize("admin.blogposts.index")]
         public async Task<IActionResult>  Index(BlogPostGetAllRequest request)
         {
             var model = await mediator.Send(request);
             return View(model);
         }
+        [Authorize("admin.blogposts.create")]
         public async Task<IActionResult> Create()
         {
             var categories = await mediator.Send(new CategoryGetAllRequest());
@@ -39,6 +42,8 @@ namespace BigOn_WebUI.Areas.Admin.Controllers
             return View();
         }
         [HttpPost]
+        [Authorize("admin.blogposts.create")]
+
         public async Task<IActionResult>  Create(BlogPostAddRequest request)
         {
             
@@ -47,6 +52,8 @@ namespace BigOn_WebUI.Areas.Admin.Controllers
         }
 
         [HttpPost]
+        [Authorize("admin.blogposts.delete")]
+
         public async Task<IActionResult> Delete(BlogPostRemoveRequest request)
         {
             await mediator.Send(request);
@@ -57,12 +64,16 @@ namespace BigOn_WebUI.Areas.Admin.Controllers
 
             });
         }
+        [Authorize("admin.blogposts.details")]
+
         public async Task<IActionResult> Details(BlogPostGetByIdRequest request)
         {
             var response = await mediator.Send(request);
 
             return View(response);
         }
+        [Authorize("admin.blogposts.edit")]
+
         public async Task<IActionResult> Edit(BlogPostGetByIdRequest request)
         {
             var categories = await mediator.Send(new CategoryGetAllRequest());
@@ -74,6 +85,8 @@ namespace BigOn_WebUI.Areas.Admin.Controllers
             return View(response);
         }
         [HttpPost]
+        [Authorize("admin.blogposts.edit")]
+
         public async Task<IActionResult> Edit(BlogPostEditRequest request)
         {
             var response = await mediator.Send(request);

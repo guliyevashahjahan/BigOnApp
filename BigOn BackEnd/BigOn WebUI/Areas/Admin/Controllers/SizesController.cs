@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BigOn_WebUI.Areas.Admin.Controllers
@@ -12,6 +13,7 @@ namespace BigOn_WebUI.Areas.Admin.Controllers
         {
             this.mediator = mediator;
         }
+        [Authorize("admin.sizes.index")]
         public IActionResult Index()
         {
             return View();

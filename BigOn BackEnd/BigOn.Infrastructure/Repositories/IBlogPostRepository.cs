@@ -14,5 +14,9 @@ namespace BigOn.Infrastructure.Repositories
         IQueryable<Tag> GetTagsByBlogPostId(int blogPostId);
 
         IQueryable<Tag> GetUsedTags();
+
+        BlogPostComment AddComment(int postId, int? parentId, string comment);
+
+        int CommentCounts(int postId);
     }
 }

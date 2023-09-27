@@ -19,6 +19,7 @@ namespace BigOn.Data.Persistences.Configurations
             builder.Property(x => x.Slug).HasColumnType("nvarchar").HasMaxLength(200).IsRequired();
             builder.Property(x => x.CategoryId).HasColumnType("int").IsRequired();
             builder.Property(x => x.PublishedAt).HasColumnType("datetime");
+            builder.Property(x => x.PublishedBy).HasColumnType("int");
 
 
 

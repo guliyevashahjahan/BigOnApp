@@ -1,12 +1,14 @@
 ﻿using BigOn.Infrastructure.Commons.Abstracts;
 using BigOn.Infrastructure.Entities;
+using BigOn.Infrastructure.Entities.Membership;
 using BigOn.Infrastructure.Services.Abstracts;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Data;
 
 namespace BigOn.Data.Persistences
 {
-    public class DataContext : DbContext
+    public class DataContext : IdentityDbContext<BigonUser, BigonRole, int, BigonUserClaim, BigonUserRole, BigonUserLogin, BigonRoleClaim, BigonUserToken>
     {
         private readonly IDateTimeService dateTimeService;
         private readonly IIdentityService identityService;
@@ -40,18 +42,18 @@ namespace BigOn.Data.Persistences
                     {
                         case EntityState.Added:
                             entry.Entity.CreatedAt = dateTimeService.ExecutingTime;
-                            entry.Entity.CreatedBy = identityService.GetPrincipalId;
+                            entry.Entity.CreatedBy = identityService.GetPrincipalId();
                             break;
                         case EntityState.Modified:
                             entry.Entity.LastModifiedAt = dateTimeService.ExecutingTime;
-                            entry.Entity.LastModifiedBy = identityService.GetPrincipalId;
+                            entry.Entity.LastModifiedBy = identityService.GetPrincipalId();
                             entry.Property(m => m.CreatedBy).IsModified = false;
                             entry.Property(m=>m.CreatedAt).IsModified = false;
                             break;
                         case EntityState.Deleted:
                             entry.State = EntityState.Modified;
                             entry.Entity.DeletedAt = dateTimeService.ExecutingTime;
-                            entry.Entity.DeletedBy = identityService.GetPrincipalId;
+                            entry.Entity.DeletedBy = identityService.GetPrincipalId();
                             entry.Property(m => m.CreatedBy).IsModified = false;
                             entry.Property(m => m.CreatedAt).IsModified = false;
                             entry.Property(m => m.LastModifiedAt).IsModified = false;

@@ -15,5 +15,6 @@ namespace BigOn.Infrastructure.Entities
         public string ImagePath { get; set; }
         public int CategoryId { get; set; }
         public DateTime? PublishedAt { get; set; }
+        public int? PublishedBy { get; set; }
     }
 }

@@ -2,45 +2,60 @@
     <div class="pcoded-inner-navbar main-menu">
         <div class="pcoded-navigatio-lavel">Main</div>
         <ul class="pcoded-item pcoded-left-item">
-          
-            <li>
-                <a asp-controller="Dashboard" asp-action="Index">
-                    <span class="pcoded-micon"><i class="feather icon-home"></i></span>
-                    <span class="pcoded-mtext">Dashboard</span>
-                </a>
-            </li>
-            <li>
-                <a asp-controller="Faqs" asp-action="Index">
-                    <span class="pcoded-micon"><i class="feather icon-menu"></i></span>
-                    <span class="pcoded-mtext">Faqs</span>
-                </a>
-            </li>
+
+            @if (User.HasClaim("admin.dashboard.index"))
+            {
+                <li>
+                    <a asp-controller="Dashboard" asp-action="Index">
+                        <span class="pcoded-micon"><i class="feather icon-home"></i></span>
+                        <span class="pcoded-mtext">Dashboard</span>
+                    </a>
+                </li>
+            }
+
+            @if (User.HasClaim("admin.faqs.index"))
+            {
+                <li>
+                    <a asp-controller="Faqs" asp-action="Index">
+                        <span class="pcoded-micon"><i class="feather icon-menu"></i></span>
+                        <span class="pcoded-mtext">Faqs</span>
+                    </a>
+                </li>
+            }
+
             <li class="pcoded-hasmenu">
                 <a href="javascript:void(0)">
                     <span class="pcoded-micon"><i class="feather icon-menu"></i></span>
                     <span class="pcoded-mtext">Lists</span>
                 </a>
                 <ul class="pcoded-submenu">
-                    <li >
-                        <a asp-controller="Colors" asp-action="Index">
-                            <span class="pcoded-mtext">Colors</span>
-                        </a>
-                    </li>
-                    <li >
-                        <a asp-controller="Brands" asp-action="Index">
-                            <span class="pcoded-mtext">Brands</span>
-                        </a>
-                    </li>
-                    <li >
-                        <a asp-controller="Sizes" asp-action="Index">
-                            <span class="pcoded-mtext">Sizes</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a asp-controller="Materials" asp-action="Index">
-                            <span class="pcoded-mtext">Materials</span>
-                        </a>
-                    </li>
+                    @if (User.HasClaim("admin.brands.index"))
+                    {
+
+                        <li>
+                            <a asp-controller="Brands" asp-action="Index">
+                                <span class="pcoded-mtext">Brands</span>
+                            </a>
+                        </li>
+                    }
+                    @if (User.HasClaim("admin.sizes.index"))
+                    {
+                        <li>
+                            <a asp-controller="Sizes" asp-action="Index">
+                                <span class="pcoded-mtext">Sizes</span>
+                            </a>
+                        </li>
+                    }
+                    @if (User.HasClaim("admin.materials.index"))
+                    {
+                        <li>
+                            <a asp-controller="Materials" asp-action="Index">
+                                <span class="pcoded-mtext">Materials</span>
+                            </a>
+                        </li>
+                    }
+
+
                 </ul>
             </li>
         </ul>

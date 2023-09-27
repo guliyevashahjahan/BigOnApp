@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="ie9 no-js"> <![endif]-->
@@ -548,10 +549,14 @@ for (var attr in meta) {
             <li><a href="account/login4236.html">My account</a></li>
             
             <li><a href="pages/wishlist.html">my wishlist</a></li>
-            
-            
-            <li><a href="account/login.html">sign in</a></li>
-            
+            @if (User.Identity.IsAuthenticated)
+                                    {
+                                        <li><a asp-controller="Account" asp-action="logOut">sign out</a></li>
+                                    }
+                                    else
+                                    {
+                                        <li><a asp-controller="Account" asp-action="SignIn">sign in</a></li>
+                                    }
           </ul>
         </li>
       </ul>
@@ -1300,7 +1305,7 @@ for (var attr in meta) {
       </div>
       <!-- Primary Vertical-Menu Start -->
       <div class="col-lg-3 col-md-3 col-sm-4 hidden-xs hidden-sm">
-        @await Component.InvokeAsync("Categories")
+          @await Component.InvokeAsync("Categories")
       </div>
       <!-- Primary Vertical-Menu End -->
       <!-- Search Box Start -->
@@ -2964,11 +2969,12 @@ for (var attr in meta) {
     <script src="~/libraries/toastr.js/toastr.min.js"></script>
     <script src="~/assets/js/toastr-additional.js"></script>
 
-   
+  
       @RenderSection("addjs",required:false);
 
-
+       <partial name="_SoftLogin"/>
 </body>
 
 <!-- Mirrored from bigon-5.myshopify.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Sep 2022 14:12:00 GMT -->
 </html>
+

@@ -88,5 +88,25 @@ namespace BigOn.Data.Repositories
                         select t).Distinct();
             return query;
         }
+
+        public BlogPostComment AddComment(int postId, int? parentId, string comment)
+        {
+            var commentsTable = db.Set<BlogPostComment>();
+            var commentEntity = new BlogPostComment
+            {
+                PostId = postId,
+                ParentId = parentId,
+                Comment = comment
+            };
+            commentsTable.Add(commentEntity);
+
+            return commentEntity;
+
+        }
+
+        public int CommentCounts(int postId)
+        {
+           return db.Set<BlogPostComment>().Count(m=>m.PostId == postId && m.DeletedBy == null);
+        }
     }
 }

@@ -17,7 +17,9 @@ namespace BigOn.Business.Modules.BlogPostModule.Queries.BlogPostGetByIdQuery
         public string Body { get; set; }
         public int CategoryId { get; set; }
         public DateTime? PublishedAt { get; set; }
+        public int? PublishedBy { get; set; }
         public string[] Tags { get; set; }
+        public int Comments { get; set; }
 
     }
 }

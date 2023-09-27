@@ -1,15 +1,12 @@
 ﻿using BigOn.Data.Persistences;
-using BigOn.Data.Repositories;
 using BigOn.Infrastructure.Commons.Abstracts;
-using BigOn.Infrastructure.Repositories;
+using BigOn.Infrastructure.Entities.Membership;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BigOn.Data
 {
@@ -28,6 +25,19 @@ namespace BigOn.Data
                     });
 
             });
+
+            services.AddIdentityCore<BigonUser>()
+                .AddRoles<BigonRole>()
+                .AddEntityFrameworkStores<DataContext>().
+                AddDefaultTokenProviders();
+
+            services.AddScoped<UserManager<BigonUser>>();
+            services.AddScoped<RoleManager<BigonRole>>();
+            services.AddScoped<SignInManager<BigonUser>>();
+
+            services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
 
             var repoInterfaceType = typeof(IRepository<>);
 

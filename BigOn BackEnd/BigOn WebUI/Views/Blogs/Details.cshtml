@@ -23,9 +23,13 @@
                 <i class="fa fa-user"></i> BigOn-5 Admin
               </a>
             </div>
-            <div class="post-info-right">
-              1 comment
-            </div>
+                            @if(Model.Comments > 0)
+                            {
+                                <div class="post-info-right">
+                                    @Model.Comments comment
+                                </div>
+                            }
+           
           </div>
           <h3 class="semi-title">@Model.Title</h3>
          <div>
@@ -72,51 +76,18 @@
         </div>
         <!-- Blog Details End -->
         
-        <!-- Comment Area Start -->
-        <div class="comment-area recent-post">
-          <h3 class="sidebar-title">Comments</h3>
-          
-          <!-- Single Comment Start -->
-          
-          
-          
-          <div class="single-comment">
-            <div class="comment-img f-left pr-30">
-              <img src="../../../cdn.shopify.com/s/files/1/0019/7181/4451/files/585e4beacb11b227491c3399_smallf041.png?v=1523858602" alt="">
-            </div>
-            <div class="comment-details fix">
-              <h4><a href="#">Test</a></h4>
-              <span> Apr  15 ,2018</span>
-              <p>Test test test</p>
-            </div>
-          </div>
-          <!-- Single Comment End -->
-          
-          
-           
-        </div>
-        <!-- Comment Area End -->
         
-        <form method="post" action="https://bigon-5.myshopify.com/blogs/news/temporibus-autem-quibusdam-3/comments#comment_form" id="comment_form" accept-charset="UTF-8" class="comment-form"><input type="hidden" name="form_type" value="new_comment" /><input type="hidden" name="utf8" value="✓" />
-        <!-- Contact Email Area Start -->
+      @await Component.InvokeAsync("Comments", new {postId = Model.Id})
+        <form method="post" id="commentForm">
+            <input type="hidden" name="PostId" asp-for="Id"/>
         <div class="blog-detail-contact">
           <h3 class="mb-5">Leave a comment</h3>
           <p class="text-capitalize mb-40">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           <div class="row">
-            <div class="address-wrapper">
-              <div class="col-md-12">
-                <div class="address-fname">
-                  <input placeholder="Your Name" type="text" name="comment[author]" id="commentAuthor" value="">
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="address-email">
-                  <input placeholder="Your Email" type="email" name="comment[email]" id="commentEmail" value="">
-                </div>
-              </div>
+            <div class="address-wrapper"> 
               <div class="col-xs-12">
                 <div class="address-textarea">
-                  <textarea  cols="30" rows="10"  placeholder="Your Massage" name="comment[body]" id="commentBody"></textarea>
+                  <textarea  cols="30" rows="10"  placeholder="Your Massage" name="Comment"></textarea>
                 </div>
               </div>
             </div>
@@ -128,7 +99,6 @@
             </div>
           </div>
         </div>
-        <!-- Contact Email Area End -->
         </form>
       </div>
       <!-- Main Blog End -->
@@ -10491,54 +10461,60 @@
     
     <dl>
       <dt>
-
-        
-        
-
-
-        
-
-        
-
+      </dt>
+      <dd>
+        <ul class="blog_links">
+        </ul>
+      </dd>
+    </dl>
+    
+    
+    
+    
+    <dl>
+      <dt>
+      </dt>
+      <dd>
+        <ul class="blog_links">
+        </ul>
+      </dd>
+    </dl>
+    
+    
+    
+    
+    <dl>
+      <dt>
+      </dt>
+      <dd>
+                                    <ul class="blog_links">
+        </ul>
+      </dd>
+    </dl>
+    
+    
+    
+    
+    <dl>
+      <dt>
 
       </dt>
       <dd>
         <ul class="blog_links">
           
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
+        </ul>
+      </dd>
+    </dl>
+    
+    
+    
+    
+    <dl>
+      <dt>
+
+      </dt>
+      <dd>
+        <ul class="blog_links">
           
           
         </ul>
@@ -10551,290 +10527,10 @@
     <dl>
       <dt>
 
-        
-        
-
-
-        
-
-        
-
 
       </dt>
       <dd>
         <ul class="blog_links">
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-        </ul>
-      </dd>
-    </dl>
-    
-    
-    
-    
-    <dl>
-      <dt>
-
-        
-        
-
-
-        
-
-        
-
-
-      </dt>
-      <dd>
-        <ul class="blog_links">
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-        </ul>
-      </dd>
-    </dl>
-    
-    
-    
-    
-    <dl>
-      <dt>
-
-        
-        
-
-
-        
-
-        
-
-
-      </dt>
-      <dd>
-        <ul class="blog_links">
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-        </ul>
-      </dd>
-    </dl>
-    
-    
-    
-    
-    <dl>
-      <dt>
-
-        
-        
-
-
-        
-
-        
-
-
-      </dt>
-      <dd>
-        <ul class="blog_links">
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-        </ul>
-      </dd>
-    </dl>
-    
-    
-    
-    
-    <dl>
-      <dt>
-
-        
-        
-
-
-        
-
-        
-
-
-      </dt>
-      <dd>
-        <ul class="blog_links">
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
           
         </ul>
       </dd>
@@ -10845,65 +10541,6 @@
     
     
 
-    
-    
-    
-    <dl>
-      <dt>
-
-        
-        
-
-
-        
-
-        
-
-
-      </dt>
-      <dd>
-        <ul class="blog_links">
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-        </ul>
-      </dd>
-    </dl>
-    
     
     
     
@@ -11453,117 +11090,26 @@
       </dt>
       <dd>
         <ul class="blog_links">
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
         </ul>
       </dd>
     </dl>
-    
-    
-    
-    
     <dl>
       <dt>
-
-        
-        
-
-
-        
-
-        
-
-
       </dt>
       <dd>
         <ul class="blog_links">
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
         </ul>
       </dd>
     </dl>
-    
-    
-
-    
-    
+    <dl>
+      <dt
+      </dt>
+      <dd>
+        <ul class="blog_links">
+        </ul>
+      </dd>
+    </dl>
   </div>
-
-  
-  
-  
-  
-  <!-- Meta Post Start -->
   <div class="categorie recent-post same-sidebar sidebar-widget mb-40">
     
     <h3 class="sidebar-title mb-30">Tags</h3>
@@ -11579,14 +11125,6 @@
                               
     </ul>
   </div>
-  <!-- Meta Post End -->
-  
-
-
-  
-  
-  
-  
 </div>
 
 
@@ -11683,3 +11221,31 @@
   
 
   }
+
+
+@section addjs{
+    <script>
+
+        $(document).ready(function(){
+            $("#commentForm").submit(function (e) {
+                e.preventDefault();
+                let formData = new FormData(e.currentTarget);
+
+                $.ajax({
+                    url: '@Url.Action("AddComment")',
+                    type: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function(response){
+                        console.log(response)
+                        e.currentTarget.reset();
+                    },
+                    error: function (response) {
+                        console.log(response)
+                    }
+                });
+            });
+        })
+    </script>
+}
