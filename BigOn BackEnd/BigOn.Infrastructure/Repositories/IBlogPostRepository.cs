@@ -18,5 +18,7 @@ namespace BigOn.Infrastructure.Repositories
         BlogPostComment AddComment(int postId, int? parentId, string comment);
 
         int CommentCounts(int postId);
+
+        IQueryable<BlogPostComment> GetComments(int postId);
     }
 }

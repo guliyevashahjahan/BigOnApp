@@ -72,24 +72,24 @@
             </div>
             <!-- End of Row -->
           </div>
-          <!--  Blog-Share End  -->
         </div>
-        <!-- Blog Details End -->
-        
-        
-      @await Component.InvokeAsync("Comments", new {postId = Model.Id})
+
+       @await Component.InvokeAsync("Comments", new {postId = Model.Id})
+
         <form method="post" id="commentForm">
             <input type="hidden" name="PostId" asp-for="Id"/>
+                        <input type="hidden" name="ParentId"/>
+
         <div class="blog-detail-contact">
           <h3 class="mb-5">Leave a comment</h3>
           <p class="text-capitalize mb-40">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           <div class="row">
-            <div class="address-wrapper"> 
-              <div class="col-xs-12">
-                <div class="address-textarea">
-                  <textarea  cols="30" rows="10"  placeholder="Your Massage" name="Comment"></textarea>
-                </div>
-              </div>
+            <div class="address-wrapper">
+              <ul class="col-xs-12 comments">
+               <li class="comment-text">
+                  <textarea cols="30" rows="10" placeholder="Your Massage" name="Comment"></textarea>
+               </li>
+              </ul>
             </div>
             <p class="form-message ml-15"></p>
             <div class="col-xs-12 footer-content mail-content">
@@ -10835,10 +10835,6 @@
         </ul>
       </dd>
     </dl>
-    
-    
-    
-    
     <dl>
       <dt>
 
@@ -10894,10 +10890,6 @@
         </ul>
       </dd>
     </dl>
-    
-    
-    
-    
     <dl>
       <dt>
 
@@ -10953,10 +10945,6 @@
         </ul>
       </dd>
     </dl>
-    
-    
-    
-    
     <dl>
       <dt>
 
@@ -11012,10 +11000,6 @@
         </ul>
       </dd>
     </dl>
-    
-    
-    
-    
     <dl>
       <dt>
 
@@ -11071,10 +11055,6 @@
         </ul>
       </dd>
     </dl>
-    
-    
-    
-    
     <dl>
       <dt>
 
@@ -11169,13 +11149,6 @@
   
 </style> 
 
-
-
-
-
-
-
-
 </div>
 
 
@@ -11227,6 +11200,13 @@
     <script>
 
         $(document).ready(function(){
+
+            $('img[data-text]').each(function(index,item){
+                let name = $(item).data('text');
+                $(item).attr('src', generateAvatar(name))
+            })
+
+
             $("#commentForm").submit(function (e) {
                 e.preventDefault();
                 let formData = new FormData(e.currentTarget);
@@ -11238,8 +11218,29 @@
                     processData: false,
                     contentType: false,
                     success: function(response){
+                        let id = $('input[name=ParentId]').val();
                         console.log(response)
                         e.currentTarget.reset();
+                        $('ul.comments li:not(.comment-text)').remove();
+                        $('input[name=ParentId]').val('');
+
+                        let pin = $('.single-comment:last-child');
+                        if(pin.length>0){
+                            if (id.length == 0) {
+                                $(response).insertAfter(pin);
+                            }
+                            else {
+                                $(response).insertAfter($(`#comment-${id}`));
+                            }
+                        }
+                        else{
+                            $(response).insertAfter($('.comment-area .sidebar-title'));
+                        }
+                     
+                        $('img[data-text]').each(function (index, item) {
+                            let name = $(item).data('text');
+                            $(item).attr('src', generateAvatar(name))
+                        })
                     },
                     error: function (response) {
                         console.log(response)
@@ -11247,5 +11248,46 @@
                 });
             });
         })
+
+        function replyComment(element) {
+           let comment = $(element).closest('.single-comment').clone().html();
+            let replied = $('<li/>',{
+                html: comment
+            });
+
+            let id = $(element).data('id');
+            $(`input[name=ParentId]`).val(id);
+            let btn = replied.find('.btn-reply');
+            btn.html(' <i class="fa fa-trash"></i>')
+            btn.unbind().click(function(e){
+                $('ul.comments li:not(.comment-text)').remove();
+                $('input[name=ParentId]').val('');
+            })
+
+            $('ul.comments li:not(.comment-text)').remove(); 
+
+            replied.insertBefore($('.comment-text'));
+        }
+
+        function generateAvatar(name) {
+            var initials = name.split(' ').map(function (str) { return str ? str[0].toUpperCase() : ""; }).join('');
+            var canvas = document.createElement('canvas');
+            var radius = 30;
+            var margin = 5;
+            canvas.width = radius * 2 + margin * 2;
+            canvas.height = radius * 2 + margin * 2;
+
+            var ctx = canvas.getContext('2d');
+            ctx.beginPath();
+            ctx.arc(radius + margin, radius + margin, radius, 0, 2 * Math.PI, false);
+            ctx.closePath();
+            ctx.fillStyle = 'grey';
+            ctx.fill();
+            ctx.fillStyle = "white";
+            ctx.font = "bold 30px Arial";
+            ctx.textAlign = 'center';
+            ctx.fillText(initials, radius + 5, radius * 4 / 3 + margin);
+            return canvas.toDataURL();
+        }
     </script>
 }

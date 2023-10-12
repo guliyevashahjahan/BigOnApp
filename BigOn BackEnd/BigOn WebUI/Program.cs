@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using System.Reflection;
@@ -43,7 +44,8 @@ namespace BigOn_WebUI
             builder.Services.Configure<EmailOptions>(cfg => {
 
                 builder.Configuration.GetSection(cfg.GetType().Name).Bind(cfg);
-                });
+                
+            });
 
             builder.Services.AddSingleton<IEmailService, EmailService>();
             builder.Services.AddSingleton<IDateTimeService, DateTimeService>();
@@ -107,8 +109,9 @@ namespace BigOn_WebUI
                     name: "Areas",
                   pattern: "{area:exists}/{controller=dashboard}/{action=index}/{id?}");
                 endpoints.MapControllerRoute("default", "{controller=home}/{action=index}/{id?}");
-                });
-
+               
+            });
+          
             app.Run();
         }
         private static void ReadAllPolicies() 

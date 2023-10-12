@@ -11,11 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BigOn WebUI", "BigOn WebUI\BigOn WebUI.csproj", "{1221975C-37B7-49C5-AB18-719A28386258}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigOn.Infrastructure", "BigOn.Infrastructure\BigOn.Infrastructure.csproj", "{C83567BB-09DD-4210-A58D-333442E3BF45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BigOn.Infrastructure", "BigOn.Infrastructure\BigOn.Infrastructure.csproj", "{C83567BB-09DD-4210-A58D-333442E3BF45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigOn.Data", "BigOn.Data\BigOn.Data.csproj", "{8271EEE8-D843-48F4-9572-4CA2DA6B8842}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BigOn.Data", "BigOn.Data\BigOn.Data.csproj", "{8271EEE8-D843-48F4-9572-4CA2DA6B8842}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigOn.Business", "BigOn.Business\BigOn.Business.csproj", "{9D698B84-0314-42C9-A358-12AFD605F430}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BigOn.Business", "BigOn.Business\BigOn.Business.csproj", "{9D698B84-0314-42C9-A358-12AFD605F430}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigOn.WebApi", "BigOn.WebApi\BigOn.WebApi.csproj", "{D622EC68-F847-4647-8787-4CAFD9D7FCA6}"
 EndProject

@@ -10,7 +10,7 @@ namespace BigOn.Business.Modules.BlogPostModule.Queries.BlogPostGetBySlugQuery
         private readonly IBlogPostRepository blogPostRepository;
         private readonly ICategoryRepository categoryRepository;
 
-        public BlogPostGetBySlugRequestHandler(IBlogPostRepository blogPostRepository,ICategoryRepository categoryRepository)
+        public BlogPostGetBySlugRequestHandler(IBlogPostRepository blogPostRepository, ICategoryRepository categoryRepository)
         {
             this.blogPostRepository = blogPostRepository;
             this.categoryRepository = categoryRepository;
@@ -34,9 +34,10 @@ namespace BigOn.Business.Modules.BlogPostModule.Queries.BlogPostGetBySlugQuery
                          });
 
             var data = await query.FirstOrDefaultAsync(cancellationToken);
-           
+
             data.Tags = await blogPostRepository.GetTagsByBlogPostId(data.Id).Select(m => m.Text).ToArrayAsync(cancellationToken);
-           
+
+
             data.Comments = blogPostRepository.CommentCounts(data.Id);
             return data;
         }

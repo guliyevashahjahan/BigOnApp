@@ -16,11 +16,11 @@ namespace BigOn.Business.Modules.BlogPostModule.Commands.BlogPostAddComment
             this.blogPostRepository = blogPostRepository;
             this.userManager = userManager;
         }
-        public async Task<BlogPostCommentDto> Handle(BlogPostAddCommentRequest request, CancellationToken cancellationToken)
+        public async  Task<BlogPostCommentDto> Handle(BlogPostAddCommentRequest request, CancellationToken cancellationToken)
         {
-            var comment = blogPostRepository.AddComment(request.PostId, request.ParentId, request.Comment);
+            var comment =  blogPostRepository.AddComment(request.PostId, request.ParentId, request.Comment);
             blogPostRepository.Save();
-            var user = await userManager.Users.FirstOrDefaultAsync(m=>m.Id == comment.CreatedBy, cancellationToken);
+            var user = userManager.Users.FirstOrDefault(m => m.Id == comment.CreatedBy);
             var response = new BlogPostCommentDto
             {
                 Id = comment.Id,

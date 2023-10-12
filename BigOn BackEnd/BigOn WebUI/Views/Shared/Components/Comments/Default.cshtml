@@ -1,4 +1,26 @@
-﻿
-@*
-    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@using BigOn.Business.Modules.BlogPostModule.Commands.BlogPostAddComment
+@model IEnumerable<BlogPostCommentDto>
+
+
+<div class="comment-area recent-post">
+    <h3 class="sidebar-title">Comments</h3>
+    @foreach (var item in Model)
+    {
+        <div class="single-comment@(item.ParentId.HasValue?$" child":"")"
+        id="comment-@item.Id">
+            <div class="comment-img f-left mr-30">
+                <img data-text="@item.Author" src="../../../cdn.shopify.com/s/files/1/0019/7181/4451/files/585e4beacb11b227491c3399_smallf041.png?v=1523858602" alt="">
+            <button data-id="@item.Id" class="btn-reply" onclick="replyComment(this)">
+                    <i class="fa fa-reply"></i>
+            </button>
+            </div>
+            <div class="comment-details fix">
+                <h4><a href="#">@item.Author</a> <a class="replied" @(item.ParentId.HasValue ? $" href=#comment-{item.ParentId}" : "")>Replied</a> </h4>
+                <span>@item.CreatedAt.ToString("MMM dd, yyyy")</span>
+                <p>@item.Comment</p>
+            </div>
+        </div>
+        
+    }
+</div>
+

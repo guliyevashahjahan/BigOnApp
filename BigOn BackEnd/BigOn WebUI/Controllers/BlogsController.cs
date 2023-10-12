@@ -38,7 +38,7 @@ namespace BigOn_WebUI.Controllers
         public async Task<IActionResult> AddComment(BlogPostAddCommentRequest  request)
         {
             var model = await mediator.Send(request);
-            return Json(model);
+            return PartialView("_Comment", model);
         }
     }
 }

@@ -108,5 +108,11 @@ namespace BigOn.Data.Repositories
         {
            return db.Set<BlogPostComment>().Count(m=>m.PostId == postId && m.DeletedBy == null);
         }
+
+        public IQueryable<BlogPostComment> GetComments(int postId)
+        {
+            return db.Set<BlogPostComment>().Where(m => m.PostId == postId && m.DeletedBy == null);
+
+        }
     }
 }

@@ -1,0 +1,19 @@
+﻿@using BigOn.Business.Modules.BlogPostModule.Commands.BlogPostAddComment
+@model BlogPostCommentDto
+
+
+
+<div class="single-comment@(Model.ParentId.HasValue?$" child":"")"
+     id="comment-@Model.Id">
+    <div class="comment-img f-left mr-30">
+        <img data-text="@Model.Author" src="../../../cdn.shopify.com/s/files/1/0019/7181/4451/files/585e4beacb11b227491c3399_smallf041.png?v=1523858602" alt="">
+        <button data-id="@Model.Id" class="btn-reply" onclick="replyComment(this)">
+            <i class="fa fa-reply"></i>
+        </button>
+    </div>
+    <div class="comment-details fix">
+        <h4><a href="#">@Model.Author</a> <a class="replied" @(Model.ParentId.HasValue ? $" href=#comment-{Model.ParentId}" : "")>Replied</a> </h4>
+        <span>@Model.CreatedAt.ToString("MMM dd, yyyy")</span>
+        <p>@Model.Comment</p>
+    </div>
+</div>

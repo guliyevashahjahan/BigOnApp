@@ -31,3 +31,57 @@
     .pagination li.active {
         color: #4380db;
     }
+
+
+    .single-comment.child{
+        padding-left: 25px;
+    }
+
+    .comment-img img {
+        width: 60px;
+        height:60px;
+        transition: 0.3s;
+    }
+
+.comment-img {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position:relative;
+}
+.btn-reply{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8em;
+    color:black;
+    opacity:0;
+    transition:0.3s;
+}
+.comment-img:hover img{
+    opacity: 0;
+}
+.comment-img:hover .btn-reply{
+    opacity: 1;
+}
+
+ul.comments{
+    padding-top: 20px;
+}
+.comments > .btn-reply{
+    color: darkred;
+}
+
+ul.comments li:not(:last-child):not(:empty){
+    border-bottom: 2px dotted #cdcdcd;
+    padding-bottom: 10px;
+    margin-bottom:10px;
+}
