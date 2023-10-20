@@ -20,5 +20,6 @@ namespace BigOn.Infrastructure.Repositories
         int CommentCounts(int postId);
 
         IQueryable<BlogPostComment> GetComments(int postId);
+
     }
 }

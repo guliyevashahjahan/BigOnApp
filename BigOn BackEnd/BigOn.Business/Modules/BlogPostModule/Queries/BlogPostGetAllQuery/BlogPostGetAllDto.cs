@@ -17,5 +17,6 @@ namespace BigOn.Business.Modules.BlogPostModule.Queries.BlogPostGetAllQuery
 
         public int CategoryId { get; set; }
         public DateTime? PublishedAt { get; set; }
+        public int? PublishedBy { get; set; }
     }
 }

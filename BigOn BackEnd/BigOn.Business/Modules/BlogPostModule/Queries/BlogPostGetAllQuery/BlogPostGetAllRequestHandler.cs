@@ -30,10 +30,15 @@ namespace BigOn.Business.Modules.BlogPostModule.Queries.BlogPostGetAllQuery
                              Slug = bp.Slug,
                              ImagePath = bp.ImagePath,
                              PublishedAt = bp.PublishedAt,
+                             PublishedBy = bp.PublishedBy,
                              CategoryId = bp.CategoryId,
                              CategoryName = c.Name
 
                          });
+            if (request.OnlyPublished)
+            {
+                return query.Where(m=> m.PublishedBy !=null).ToPaging(request, m=>m.PublishedAt);
+            }
 
             var data = query.ToPaging(request, m => m.Id);
             return data;

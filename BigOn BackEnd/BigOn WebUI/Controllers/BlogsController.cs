@@ -20,6 +20,7 @@ namespace BigOn_WebUI.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> Index(BlogPostGetAllRequest request)
         {
+            request.OnlyPublished = true;
             var model = await mediator.Send(request);
            
             return View(model);

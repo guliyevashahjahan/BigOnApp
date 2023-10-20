@@ -28,8 +28,8 @@ namespace BigOn.Data
 
             services.AddIdentityCore<BigonUser>()
                 .AddRoles<BigonRole>()
-                .AddEntityFrameworkStores<DataContext>().
-                AddDefaultTokenProviders();
+                .AddEntityFrameworkStores<DataContext>();
+               // AddDefaultTokenProviders();
 
             services.AddScoped<UserManager<BigonUser>>();
             services.AddScoped<RoleManager<BigonRole>>();

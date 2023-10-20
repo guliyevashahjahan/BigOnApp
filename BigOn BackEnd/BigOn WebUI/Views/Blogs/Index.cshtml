@@ -42,7 +42,8 @@
                                         </div>
                                         <div class="blog-content-lower">
                                             <a asp-action="Details" asp-route-slug="@item.Slug">Read more</a>
-                                            <span class="f-right"> 15/Apr/ 18</span>
+                                            <span class="f-right"> @item.PublishedAt.Value.ToString("dd/MMM/ yy")</span>
+
                                         </div>
                                     </div>
                                 </div>

@@ -46,9 +46,16 @@ namespace BigOn_WebUI
                 builder.Configuration.GetSection(cfg.GetType().Name).Bind(cfg);
                 
             });
+            builder.Services.Configure<CryptoOptions>(cfg => {
+
+                builder.Configuration.GetSection(cfg.GetType().Name).Bind(cfg);
+
+            });
 
             builder.Services.AddSingleton<IEmailService, EmailService>();
             builder.Services.AddSingleton<IDateTimeService, DateTimeService>();
+            builder.Services.AddSingleton<ICryptoService, CryptoService>();
+
             builder.Services.AddSingleton<IFileService, FileService>();
             builder.Services.AddScoped<IIdentityService, IdentityService>();
             builder.Services.AddScoped<IClaimsTransformation, AppClaimProvider>();

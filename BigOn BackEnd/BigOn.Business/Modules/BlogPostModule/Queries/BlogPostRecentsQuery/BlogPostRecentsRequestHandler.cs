@@ -2,11 +2,6 @@
 using BigOn.Infrastructure.Repositories;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BigOn.Business.Modules.BlogPostModule.Queries.BlogPostRecentsQuery
 {
@@ -20,8 +15,8 @@ namespace BigOn.Business.Modules.BlogPostModule.Queries.BlogPostRecentsQuery
         }
         public async Task<IEnumerable<BlogPost>> Handle(BlogPostRecentsRequest request, CancellationToken cancellationToken)
         {
-            var response = await blogPostRepository.GetAll(m => m.DeletedBy == null).
-                OrderByDescending(m => m.CreatedAt).
+            var response = await blogPostRepository.GetAll(m => m.DeletedBy == null && m.PublishedBy !=null).
+                OrderByDescending(m => m.PublishedAt).
                 Take(request.Size).
                 ToListAsync(cancellationToken);
 

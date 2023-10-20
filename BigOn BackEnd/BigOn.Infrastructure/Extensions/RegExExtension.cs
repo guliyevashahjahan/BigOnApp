@@ -51,5 +51,15 @@ namespace BigOn.Infrastructure.Extensions
 
             return value;
         }
+        static public (string token, string email) RegisterConfirmToken(this string value)
+        {
+            var match = Regex.Match(value, @"^t=(?<token>.+)&email=(?<email>.+)$");
+            if (!match.Success)
+            {
+                throw new Exception("BAD_DATA");
+            }
+
+            return (match.Groups["token"].Value, match.Groups["email"].Value);
+        }
     }
 }

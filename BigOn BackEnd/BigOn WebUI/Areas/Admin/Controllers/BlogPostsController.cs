@@ -1,19 +1,15 @@
 ﻿using BigOn.Business.Modules.BlogPostModule.Commands.BlogPostAddCommand;
 using BigOn.Business.Modules.BlogPostModule.Commands.BlogPostEditCommand;
+using BigOn.Business.Modules.BlogPostModule.Commands.BlogPostPublishCommand;
 using BigOn.Business.Modules.BlogPostModule.Commands.BlogPostRemoveCommand;
 using BigOn.Business.Modules.BlogPostModule.Queries.BlogPostGetAllQuery;
 using BigOn.Business.Modules.BlogPostModule.Queries.BlogPostGetByIdQuery;
 using BigOn.Business.Modules.BlogPostModule.Queries.TagGetUsedQuery;
 using BigOn.Business.Modules.CategoryModule.Queries.CategoryGetAllQuery;
-using BigOn.Business.Modules.ColorsModule.Commands.ColorRemoveCommand;
-using BigOn.Business.Modules.ColorsModule.Queries.ColorGetByIdQuery;
-using BigOn.Infrastructure.Entities;
-using BigOn.Infrastructure.Services.Abstracts;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 
 namespace BigOn_WebUI.Areas.Admin.Controllers
 {
@@ -92,6 +88,20 @@ namespace BigOn_WebUI.Areas.Admin.Controllers
             var response = await mediator.Send(request);
 
             return RedirectToAction(nameof (Index));
+        }
+
+        [HttpPost]
+        [Authorize("admin.blogposts.publish")]
+
+        public async Task<IActionResult> Publish(BlogPostPublishRequest request)
+        {
+            await mediator.Send(request);
+            return Json(new
+            {
+                error = false,
+                message = "Post published succesfully!"
+
+            });
         }
     }
 }

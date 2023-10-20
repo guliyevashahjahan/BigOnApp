@@ -57,7 +57,7 @@
                 </div>
                 <div class="card-block">
                     <h4 class="sub-title">Basic Inputs</h4>
-                    <form method="post" enctype="multipart/form-data">
+                    <div method="post" enctype="multipart/form-data">
                         <div class="form-group row">
                             <label class="col-sm-2 col-form-label" asp-for="Title"></label>
                             <div class="col-sm-10">
@@ -79,7 +79,7 @@
                             <div class="col-sm-10">
                                 <p class="form-control">
                                     @Model.CategoryName
-                               </p>
+                                </p>
                             </div>
                         </div>
                         <div class="form-group row">
@@ -100,13 +100,58 @@
                         <div class="form-group row">
                             <div class="col-12">
                                 <a class="btn btn-info" asp-action="Index">Go Back</a>
+                                @if (Model.PublishedBy is null && User.HasClaim("admin.blogposts.publish"))
+                                {
+                                    <button class="btn btn-secondary" onclick="publishPost(@Model.Id,'@Model.Title')">Publish</button>
+                                }
                                 <a class="btn btn-warning" asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
 
         </div>
     </div>
 </div>
+
+@section addjs{
+     
+        <script src="~/libraries/sweetalert/sweetalert.min.js"></script>
+
+            <script>
+                function publishPost(postId,name) {
+                swal({
+                    title: "Are you sure?",
+                    text: `${name} will be published!`,
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
+                    .then((willDelete) => {
+                        if (willDelete) {
+                            let obj = { postId };
+                            $.ajax({
+                                url: '@Url.Action("publish")',
+                                type: 'POST',
+                                data: obj,
+                                success: function (response, status, xhr) {
+                                    if (response.error == true) {
+                                        toastr.error(headers['message'], "Error!");
+                                        return;
+                                    }
+                                    toastr.success("Published successfully", "Success!");
+                                    setTimeout(function () {
+                                        window.location.reload();
+                                    }, 2e3);
+                                },
+                                error: function (response, xhr) {
+                                    console.warn(response, xhr)
+                                }
+                            });
+                        }
+                    });
+                }
+            </script>
+        }
+   

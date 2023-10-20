@@ -18,6 +18,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BigOn.Business", "BigOn.Business\BigOn.Business.csproj", "{9D698B84-0314-42C9-A358-12AFD605F430}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigOn.WebApi", "BigOn.WebApi\BigOn.WebApi.csproj", "{D622EC68-F847-4647-8787-4CAFD9D7FCA6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9D698B84-0314-42C9-A358-12AFD605F430} = {9D698B84-0314-42C9-A358-12AFD605F430}
+		{C83567BB-09DD-4210-A58D-333442E3BF45} = {C83567BB-09DD-4210-A58D-333442E3BF45}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -33,6 +33,7 @@ namespace BigOn.Business.Modules.BlogPostModule.Queries.BlogPostGetByIdQuery
                                              Slug = bp.Slug,
                                              ImagePath = bp.ImagePath,
                                              PublishedAt = bp.PublishedAt,
+                                             PublishedBy = bp.PublishedBy,
                                              CategoryId = bp.CategoryId,
                                              CategoryName = c.Name
 

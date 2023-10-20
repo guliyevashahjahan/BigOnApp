@@ -14,16 +14,19 @@ namespace BigOn.Business.Modules.AccountModule.Commands.RegisterCommand
         private readonly RoleManager<BigonRole> roleManager;
         private readonly IEmailService emailService;
         private readonly IActionContextAccessor actionContextAccessor;
+        private readonly ICryptoService cryptoService;
 
         public RegisterRequestHandler(UserManager<BigonUser> userManager,
             RoleManager<BigonRole> roleManager,
             IEmailService emailService,
-            IActionContextAccessor actionContextAccessor)
+            IActionContextAccessor actionContextAccessor,
+            ICryptoService cryptoService)
         {
             this.userManager = userManager;
             this.roleManager = roleManager;
             this.emailService = emailService;
             this.actionContextAccessor = actionContextAccessor;
+            this.cryptoService = cryptoService;
         }
         public async Task Handle(RegisterRequest request, CancellationToken cancellationToken)
         {
@@ -65,7 +68,11 @@ namespace BigOn.Business.Modules.AccountModule.Commands.RegisterCommand
             }
             string token = await userManager.GenerateEmailConfirmationTokenAsync(user);
             token = HttpUtility.UrlEncode(token);
-            string url = $"{actionContextAccessor.ActionContext.HttpContext.Request.Scheme}://{actionContextAccessor.ActionContext.HttpContext.Request.Host}/email-confirm?token={token}&email={user.Email}";
+
+            token = cryptoService.Encrypt($"t={token}&email={user.Email}", true);
+
+
+            string url = $"{actionContextAccessor.ActionContext.HttpContext.Request.Scheme}://{actionContextAccessor.ActionContext.HttpContext.Request.Host}/email-confirm.html?token={token}";
             string message = $"Your registration is confirmed! Click the <a href='{url}'>link</a> to activate your account.";
             await  emailService.SendMailAsync(request.Email, "Bigon Registration", message);
         }

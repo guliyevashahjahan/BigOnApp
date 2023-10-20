@@ -7,6 +7,7 @@ namespace BigOn.Business.Modules.BlogPostModule.Queries.BlogPostGetAllQuery
 {
     public class BlogPostGetAllRequest : Pageable, IRequest<IPagedResponse<BlogPostGetAllDto>>
     {
+        public bool OnlyPublished { get; set; }
         public override int Size
         {
             get
