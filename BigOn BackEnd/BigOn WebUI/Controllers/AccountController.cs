@@ -3,8 +3,11 @@ using BigOn.Business.Modules.AccountModule.Commands.RegisterCommand;
 using BigOn.Business.Modules.AccountModule.Commands.SignInCommand;
 using MediatR;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using System.Security.Claims;
 
 namespace BigOn_WebUI.Controllers
 {
@@ -28,7 +31,14 @@ namespace BigOn_WebUI.Controllers
         [Route("/signin.html")]
         public async Task<IActionResult> SignIn(SignInRequest request)
         {
-           await mediator.Send(request);
+           var claims = await mediator.Send(request);
+            var principal = new ClaimsPrincipal(new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme));
+            await Request.HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
+                principal, new AuthenticationProperties
+                {
+                    IsPersistent = true,
+                    ExpiresUtc = DateTime.UtcNow.AddMinutes(10)
+                });
             var callback = Request.Query["ReturnUrl"];
             if (!string.IsNullOrWhiteSpace(callback))
             {

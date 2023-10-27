@@ -17,7 +17,7 @@ namespace BigOn.WebApi.Controllers
         }
 
         [HttpGet]
-       // [Authorize("admin.sizes.index")]
+        [Authorize("admin.sizes.index")]
         public IActionResult Get()
         {
             return Ok();

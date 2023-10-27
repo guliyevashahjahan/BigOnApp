@@ -1,4 +1,5 @@
 ﻿using BigOn.Infrastructure.Commons.Abstracts;
+using BigOn.Infrastructure.Exceptions;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -27,20 +28,25 @@ namespace BigOn.Infrastructure.Commons.Concrates
 
         public T Edit(T model)
         {
-           db.Entry(model).State = EntityState.Modified;
+            db.Entry(model).State = EntityState.Modified;
             return model;
         }
 
         public T Get(Expression<Func<T, bool>> predicate = null)
         {
-           if (predicate == null)
+            if (predicate == null)
             {
                 return table.FirstOrDefault();
             }
-            return table.FirstOrDefault(predicate);
+            var data = table.FirstOrDefault(predicate);
+            if (data == null)
+            {
+                throw new NotFoundException("RECORD_NOT_FOUND");
+            }
+            return data;
         }
 
-        public IQueryable<T> GetAll(Expression<Func<T, bool>> predicate = null,bool tracking=true)
+        public IQueryable<T> GetAll(Expression<Func<T, bool>> predicate = null, bool tracking = true)
         {
             var query = table.AsQueryable();
             if (!tracking)
@@ -51,7 +57,7 @@ namespace BigOn.Infrastructure.Commons.Concrates
             {
                 query = query.Where(predicate);
             }
-          
+
             return query;
         }
 

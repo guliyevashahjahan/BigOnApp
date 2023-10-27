@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BigOn.Infrastructure.Commons.Concrates
 {
-    internal class PagedResponse<T> : IPagedResponse<T>
+    public class PagedResponse<T> : IPagedResponse<T>
         where T : class
     {
         public int Page { get; set; }
@@ -22,6 +22,7 @@ namespace BigOn.Infrastructure.Commons.Concrates
 
         public IEnumerable<T> Items { get; set; }
 
+        public PagedResponse() { }
         public PagedResponse(int count, IPageable pageable)
         {
             this.Count = count;

@@ -8,7 +8,7 @@ using System.Security.Claims;
 
 namespace BigOn.Business.Modules.AccountModule.Commands.SignInCommand
 {
-    internal class SignInRequestHandler : IRequestHandler<SignInRequest>
+    internal class SignInRequestHandler : IRequestHandler<SignInRequest, List<Claim>>
     {
         private readonly UserManager<BigonUser> userManager;
         private readonly SignInManager<BigonUser> signInManager;
@@ -22,7 +22,7 @@ namespace BigOn.Business.Modules.AccountModule.Commands.SignInCommand
             this.signInManager = signInManager;
             this.actionContextAccessor = actionContextAccessor;
         }
-        public async Task Handle(SignInRequest request, CancellationToken cancellationToken)
+        public async Task<List<Claim>> Handle(SignInRequest request, CancellationToken cancellationToken)
         {
             var user = await userManager.FindByEmailAsync(request.UserName);
             if (user == null)
@@ -39,14 +39,9 @@ namespace BigOn.Business.Modules.AccountModule.Commands.SignInCommand
             {
                 new Claim(ClaimTypes.NameIdentifier,user.Id.ToString())
             };
-            var claimIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-            var principal = new ClaimsPrincipal(claimIdentity);
-            await actionContextAccessor.ActionContext.HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
-                principal, new AuthenticationProperties
-            {
-                    IsPersistent = true,
-                    ExpiresUtc = DateTime.UtcNow.AddMinutes(10)
-            });
+
+            return claims;
+         
         }
     }
 }
