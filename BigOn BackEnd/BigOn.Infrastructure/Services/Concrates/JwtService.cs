@@ -1,4 +1,5 @@
-﻿using BigOn.Infrastructure.Services.Abstracts;
+﻿using BigOn.Infrastructure.Entities.Membership;
+using BigOn.Infrastructure.Services.Abstracts;
 using BigOn.Infrastructure.Services.Configurations;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -20,14 +21,18 @@ namespace BigOn.Infrastructure.Services.Concrates
         {
             this.options = options.Value;
         }
-        public string GenerateAccessToken(List<Claim> claims)
+        public string GenerateAccessToken(BigonUser user)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(options.Key));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.NameIdentifier,user.Id.ToString())
+            };
 
-            var token = new JwtSecurityToken(options.Issuer,options.Audience,claims,
-       expires: DateTime.UtcNow.AddMinutes(20),
-       signingCredentials: credentials);
+            var token = new JwtSecurityToken(options.Issuer, options.Audience, claims,
+            expires: DateTime.Now.AddMinutes(1),
+            signingCredentials: credentials);
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }

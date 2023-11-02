@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using BigOn.Business.Modules.BlogPostModule.Commands.BlogPostAddCommand;
+using BigOn.Business.Modules.BlogPostModule.Commands.BlogPostAddComment;
 using BigOn.Business.Modules.BlogPostModule.Commands.BlogPostEditCommand;
 using BigOn.Business.Modules.BlogPostModule.Commands.BlogPostPublishCommand;
 using BigOn.Business.Modules.BlogPostModule.Commands.BlogPostRemoveCommand;
+using BigOn.Business.Modules.BlogPostModule.Queries.BlogPostCommentsQuery;
 using BigOn.Business.Modules.BlogPostModule.Queries.BlogPostGetAllQuery;
 using BigOn.Business.Modules.BlogPostModule.Queries.BlogPostGetByIdQuery;
 using BigOn.Business.Modules.BlogPostModule.Queries.BlogPostGetBySlugQuery;
@@ -22,28 +24,28 @@ namespace BigOn.WebApi.Controllers
         private readonly IMediator mediator;
         private readonly IMapper mapper;
 
-        public BlogsController(IMediator mediator,IMapper mapper)
+        public BlogsController(IMediator mediator, IMapper mapper)
         {
             this.mediator = mediator;
             this.mapper = mapper;
         }
 
         [HttpGet]
-        [Authorize("admin.blogposts.index")]
+        //[Authorize("admin.blogposts.index")]
         public async Task<IActionResult> Get([FromRoute] BlogPostGetAllRequest request)
         {
             var model = await mediator.Send(request);
             var dto = mapper.Map<PagedResponse<BlogPostDto>>(model, cfg =>
             {
                 cfg.Items["host"] = Request.GetHost();
-                Request.AppendHeaderTo(cfg.Items, "dateFormat"); 
+                Request.AppendHeaderTo(cfg.Items, "dateFormat");
 
             });
             return Ok(dto);
         }
 
         [HttpGet("{id:int}")]
-        [Authorize("admin.blogposts.details")]
+        //[Authorize("admin.blogposts.details")]
         public async Task<IActionResult> GetById([FromRoute] BlogPostGetByIdRequest request)
         {
             var response = await mediator.Send(request);
@@ -52,7 +54,7 @@ namespace BigOn.WebApi.Controllers
         }
 
         [HttpGet("{slug}")]
-        [Authorize("admin.blogposts.details")]
+        //[Authorize("admin.blogposts.details")]
         public async Task<IActionResult> GetBySlug([FromRoute] BlogPostGetBySlugRequest request)
         {
             var response = await mediator.Send(request);
@@ -60,6 +62,19 @@ namespace BigOn.WebApi.Controllers
             return Ok(response);
         }
 
+        [HttpPost("addcomment")]
+        public async Task<IActionResult> AddComment([FromBody] BlogPostAddCommentRequest request)
+        {
+            var response = await mediator.Send(request);
+            return Ok(response);
+        }
+
+        [HttpPost ("{postId}/comments")]
+        public async Task<IActionResult> Comments([FromRoute]  BlogPostCommentsRequest request)
+        {
+            var response = await mediator.Send(request);
+            return Ok(response);
+        }
 
         [HttpPost]
         [Authorize("admin.blogposts.create")]

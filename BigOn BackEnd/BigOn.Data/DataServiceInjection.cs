@@ -1,6 +1,7 @@
 ﻿using BigOn.Data.Persistences;
 using BigOn.Infrastructure.Commons.Abstracts;
 using BigOn.Infrastructure.Entities.Membership;
+using BigOn.Infrastructure.Services.Concrates;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
@@ -26,12 +27,13 @@ namespace BigOn.Data
 
             });
 
-            services.AddIdentityCore<BigonUser>()
-                .AddRoles<BigonRole>()
-                .AddEntityFrameworkStores<DataContext>();
-               // AddDefaultTokenProviders();
+            services.AddIdentity<BigonUser,BigonRole>()
+                .AddUserManager<AppUserManager>()
+                .AddEntityFrameworkStores<DataContext>()
+                .AddDefaultTokenProviders();
 
             services.AddScoped<UserManager<BigonUser>>();
+            services.AddScoped<IUserManager, AppUserManager>(); 
             services.AddScoped<RoleManager<BigonRole>>();
             services.AddScoped<SignInManager<BigonUser>>();
 

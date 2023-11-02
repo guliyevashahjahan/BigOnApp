@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.Extensions.Primitives;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,11 @@ namespace BigOn.Infrastructure.Extensions
                 return values.First();
 
             return null;
+        }
+        public static string GetHeaderValue(this IActionContextAccessor ctx, string key)
+        {
+           
+            return GetHeaderValue(ctx.ActionContext.HttpContext.Request, key);
         }
         public static IDictionary<string, object> AppendHeaderTo(this HttpRequest request,IDictionary<string,object> items, string key)
         {

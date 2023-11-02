@@ -8,7 +8,7 @@ using System.Security.Claims;
 
 namespace BigOn.Business.Modules.AccountModule.Commands.SignInCommand
 {
-    internal class SignInRequestHandler : IRequestHandler<SignInRequest, List<Claim>>
+    internal class SignInRequestHandler : IRequestHandler<SignInRequest, BigonUser>
     {
         private readonly UserManager<BigonUser> userManager;
         private readonly SignInManager<BigonUser> signInManager;
@@ -22,7 +22,7 @@ namespace BigOn.Business.Modules.AccountModule.Commands.SignInCommand
             this.signInManager = signInManager;
             this.actionContextAccessor = actionContextAccessor;
         }
-        public async Task<List<Claim>> Handle(SignInRequest request, CancellationToken cancellationToken)
+        public async Task<BigonUser> Handle(SignInRequest request, CancellationToken cancellationToken)
         {
             var user = await userManager.FindByEmailAsync(request.UserName);
             if (user == null)
@@ -35,12 +35,8 @@ namespace BigOn.Business.Modules.AccountModule.Commands.SignInCommand
             {
                 throw new Exception("Username or password is incorrect!");
             }
-            var claims = new List<Claim>
-            {
-                new Claim(ClaimTypes.NameIdentifier,user.Id.ToString())
-            };
-
-            return claims;
+           
+            return user;
          
         }
     }

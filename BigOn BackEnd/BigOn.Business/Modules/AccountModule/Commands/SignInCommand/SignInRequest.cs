@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using BigOn.Infrastructure.Entities.Membership;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BigOn.Business.Modules.AccountModule.Commands.SignInCommand
 {
-    public class SignInRequest : IRequest<List<Claim>>
+    public class SignInRequest : IRequest<BigonUser>
     {
         public string UserName { get; set; }
         public string Password { get; set; }

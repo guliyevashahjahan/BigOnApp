@@ -31,7 +31,12 @@ namespace BigOn_WebUI.Controllers
         [Route("/signin.html")]
         public async Task<IActionResult> SignIn(SignInRequest request)
         {
-           var claims = await mediator.Send(request);
+           var user = await mediator.Send(request);
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.NameIdentifier,user.Id.ToString())
+            };
+
             var principal = new ClaimsPrincipal(new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme));
             await Request.HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
                 principal, new AuthenticationProperties

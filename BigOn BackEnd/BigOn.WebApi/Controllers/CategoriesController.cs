@@ -4,6 +4,7 @@ using BigOn.Business.Modules.CategoryModule.Commands.CategoryRemoveCommand;
 using BigOn.Business.Modules.CategoryModule.Queries.CategoryGetAllQuery;
 using BigOn.Business.Modules.CategoryModule.Queries.CategoryGetByIdQuery;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -35,6 +36,7 @@ namespace BigOn.WebApi.Controllers
         }
 
         [HttpPost]
+        [Authorize("admin.categories.create")]
         public async Task<IActionResult> Add([FromBody]CategoryAddRequest request)
         {
             var response = await mediator.Send(request);
@@ -42,6 +44,7 @@ namespace BigOn.WebApi.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize("admin.categories.edit")]
         public async Task<IActionResult> Edit(int id,[FromBody]CategoryEditRequest request)
         {
             request.Id= id;
@@ -50,6 +53,7 @@ namespace BigOn.WebApi.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize("admin.categories.delete")]
         public async Task<IActionResult> Remove([FromRoute] CategoryRemoveRequest request)
         {
             await mediator.Send(request);
