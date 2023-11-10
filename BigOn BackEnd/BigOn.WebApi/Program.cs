@@ -5,6 +5,7 @@ using BigOn.Infrastructure.Middlewares;
 using BigOn.Infrastructure.Services.Abstracts;
 using BigOn.Infrastructure.Services.Concrates;
 using BigOn.Infrastructure.Services.Configurations;
+using BigOn.Infrastructure.Swagger.Filters;
 using BigOn.WebApi.Pipeline;
 using FluentValidation;
 using FluentValidation.AspNetCore;
@@ -130,7 +131,20 @@ namespace BigOn.WebApi
             });
             builder.Services.AddSwaggerGen(option =>
             {
-                option.SwaggerDoc("v1", new OpenApiInfo { Title = "Bigon E-commerce Api", Version = "v1" });
+                option.OperationFilter<LanguageHeaderOperationFilter>();
+                option.OperationFilter<AuthorizeOperationFilter>();
+                option.OperationFilter<RefreshTokenHeaderOperationFilter>();
+
+                option.SwaggerDoc("v1", new OpenApiInfo { 
+                    Title = "Bigon E-commerce Api",
+                    Version = "v1",
+                    TermsOfService = new Uri("https://github.com/guliyevashahjahan"),
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Jahan Guliyeva",
+                        Email = "shahjahaneg@code.edu.az"
+                    }
+                });
                 option.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
                     In = ParameterLocation.Header,
@@ -157,6 +171,7 @@ namespace BigOn.WebApi
             });
             var app = builder.Build();
 
+         
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();

@@ -78,6 +78,7 @@ namespace BigOn.WebApi.Controllers
 
         [HttpPost]
         [Authorize("admin.blogposts.create")]
+        [SwaggerResponse(StatusCodes.Status201Created)]
         public async Task<IActionResult> Add([FromForm] BlogPostAddRequest request)
         {
 
@@ -87,6 +88,7 @@ namespace BigOn.WebApi.Controllers
 
         [HttpPost("{id}")]
         [Authorize("admin.blogposts.delete")]
+        [SwaggerResponse(StatusCodes.Status204NoContent)]
         public async Task<IActionResult> Remove([FromRoute] BlogPostRemoveRequest request)
         {
             await mediator.Send(request);

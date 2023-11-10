@@ -41,18 +41,16 @@ namespace BigOn_WebUI
                 cfg.LowercaseUrls = true;
             });
 
-            builder.Services.Configure<EmailOptions>(cfg => {
+            builder.Services.Configure<EmailOptions>(cfg => builder.Configuration.GetSection(cfg.GetType().Name).Bind(cfg));
+             
+            builder.Services.Configure<CryptoOptions>(cfg => builder.Configuration.GetSection(cfg.GetType().Name).Bind(cfg));
 
-                builder.Configuration.GetSection(cfg.GetType().Name).Bind(cfg);
-                
-            });
-            builder.Services.Configure<CryptoOptions>(cfg => {
+            builder.Services.Configure<JwtOptions>(cfg => builder.Configuration.GetSection(cfg.GetType().Name).Bind(cfg));
 
-                builder.Configuration.GetSection(cfg.GetType().Name).Bind(cfg);
-
-            });
 
             builder.Services.AddSingleton<IEmailService, EmailService>();
+            builder.Services.AddSingleton<IJwtService, JwtService>();
+
             builder.Services.AddSingleton<IDateTimeService, DateTimeService>();
             builder.Services.AddSingleton<ICryptoService, CryptoService>();
 
@@ -64,7 +62,17 @@ namespace BigOn_WebUI
             {
                 cfg.RegisterServicesFromAssembly(typeof(IBusinessReferance).Assembly);
             });
-            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+            builder.Services.AddAuthentication(cfg =>
+            {
+                cfg.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                cfg.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                cfg.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                cfg.DefaultForbidScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                cfg.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                cfg.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                cfg.DefaultSignOutScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+
+            })
                 .AddCookie(cfg =>
                 {
                     cfg.LoginPath = "/signin.html";
@@ -108,7 +116,6 @@ namespace BigOn_WebUI
 
             app.UseAuthentication();
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
 
