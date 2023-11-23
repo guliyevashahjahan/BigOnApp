@@ -1,12 +1,4 @@
-﻿<style>
-    #range-values{
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        text-align:center;
-        margin-top: 10px;
-    }
-</style>
+﻿
 @if(ViewBag.PriceInfo is not null)
 {
     <div class="border-default universal-padding sidebar-widget mb-40">
@@ -14,6 +6,5 @@
             <h2>Price</h2>
         </div>
         <div id="price-range" data-min="@ViewBag.PriceInfo.Min" data-max="@ViewBag.PriceInfo.Max"></div>
-        <p id="range-values"></p>
     </div>
 }

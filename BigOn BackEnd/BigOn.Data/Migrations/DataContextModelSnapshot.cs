@@ -22,6 +22,25 @@ namespace BigOn_WebUI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("BigOn.Infrastructure.Entities.Basket", b =>
+                {
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CatalogId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Quantity")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("UserId", "CatalogId");
+
+                    b.HasIndex("CatalogId");
+
+                    b.ToTable("Basket", (string)null);
+                });
+
             modelBuilder.Entity("BigOn.Infrastructure.Entities.BlogPost", b =>
                 {
                     b.Property<int>("Id")
@@ -916,6 +935,21 @@ namespace BigOn_WebUI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Tags", (string)null);
+                });
+
+            modelBuilder.Entity("BigOn.Infrastructure.Entities.Basket", b =>
+                {
+                    b.HasOne("BigOn.Infrastructure.Entities.ProductCatalog", null)
+                        .WithMany()
+                        .HasForeignKey("CatalogId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("BigOn.Infrastructure.Entities.Membership.BigonUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("BigOn.Infrastructure.Entities.BlogPost", b =>

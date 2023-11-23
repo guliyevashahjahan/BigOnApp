@@ -11,7 +11,7 @@ namespace BigOn.Infrastructure.Entities
     {
         public string Name { get; set; }
         public string StockKeepingUnit { get; set; }
-        public decimal Rate { get; set; }
+        public double Rate { get; set; }
         public decimal Price { get; set; }
         public string ShortDescription { get; set; }
         public string Description { get; set; }

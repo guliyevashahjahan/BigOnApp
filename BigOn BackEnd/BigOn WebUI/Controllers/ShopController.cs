@@ -1,5 +1,6 @@
 ﻿using AngleSharp.Io;
 using BigOn.Business.Modules.ShopModule.Queries.ComplexFilterQuery;
+using BigOn.Business.Modules.ShopModule.Queries.ProductCatalogQuery;
 using BigOn.Infrastructure.Extensions;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -19,7 +20,7 @@ namespace BigOn_WebUI.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> Index(ComplexFilterRequest request)
         {
-            request.Size = request.Size < 15 ? 15 : request.Size;
+            request.Size = request.Size < 16 ? 16 : request.Size;
             var response = await mediator.Send(request);
 
             if (Request.IsAjaxRequest())
@@ -29,11 +30,20 @@ namespace BigOn_WebUI.Controllers
             return View(response);
         }
 
+        [AllowAnonymous]
+        [Route("/shop/details/{productId}")]
+        public async Task<IActionResult> Details([FromRoute] ProductCatalogRequest request)
+        {
+            var response = await mediator.Send(request);
+            return View(response);
+        }
 
         [AllowAnonymous]
-        public IActionResult Details()
+        public async Task<IActionResult> ProductCatalog(ProductCatalogRequest request)
         {
-            return View();
+            var response = await mediator.Send(request);
+
+            return PartialView("_ChooseProduct", response);
         }
     }
 }

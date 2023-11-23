@@ -15,8 +15,10 @@ namespace BigOn.Infrastructure.Repositories
         Task<IEnumerable<Color>> GetColorsForFilter();
         Task<IEnumerable<Material>> GetMaterialsForFilter();
         Task<IEnumerable<Brand>> GetBrandsForFilter();
-        IQueryable<ProductCatalog> GetCatalog();
+        IQueryable<ProductCatalog> GetCatalog(Expression<Func<ProductCatalog, bool>> expression = null);
         IQueryable<ProductImage> GetImages(Expression<Func<ProductImage, bool>> expression = null);
-
+        Task<Basket> AddToBasketAsync(Basket basket,CancellationToken cancellationToken);
+        Task<Basket> ChangeBasketQuantityAsync(Basket basket,CancellationToken cancellationToken);
+        Task<ProductRate> SetRateAsync(ProductRate rate,CancellationToken cancellationToken);
     }
 }

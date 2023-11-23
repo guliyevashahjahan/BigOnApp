@@ -4,26 +4,20 @@
 
 @foreach (var item in Model.Items)
 {
-    <div class="single-product item">
+    <div class="single-product item" style="background-image:url(/uploads/images/@item.ImagePath)">
         <div class="pro-img">
-            <a href="../products/accusantium-doloremque.html">
-                <img class="primary-img popup_cart_image" src="~/uploads/images/@item.ImagePath" alt="single-product">
-
-                <img class="secondary-img popup_cart_image" src="~/uploads/images/@item.ImagePath" alt="single-product">
-            </a>
+            <a href="../products/accusantium-doloremque.html"></a>
         </div>
         <div class="pro-content">
             <h4 class="popup_cart_title"><a href="../products/accusantium-doloremque.html">@item.Name</a></h4>
-            <div class="product-rating">
-                <span class="shopify-product-reviews-badge" data-id="@item.Id"></span>
-            </div>
+           <rate value="@item.Rate" product-id="@item.Id"></rate>
             <p>
                 <span class="price"><span class=money>@item.Price.ToString("0.00₼")</span></span>
                 <del class="prev-price"><span class=money>@item.Price.ToString("0.00₼")</span></del>
             </p>
             <div class="pro-actions">
                 <div class="actions-primary">
-                    <a href="javascript:void(0);" class="action-btn" onclick="Shopify.addItem(@item.Id, 1); return false;" title="Add to Cart" data-toggle="tooltip" title="Add to cart">
+                    <a class="action-btn add-to-cart" data-id="@item.Id" title="Add to cart">
                         <span class="addto">Add To Cart</span>
                     </a>
                 </div>
@@ -41,3 +35,37 @@
         <span class="sticker-new percent">-13%</span>
     </div>
 }
+@section addjs{
+
+    <script>
+        $(document).ready(function () {
+
+            $('a.add-to-cart').click(function (e) {
+                e.preventDefault();
+
+                const productId = $(e.currentTarget).data('id');
+                $('body').addClass('fade-active')
+
+
+                $.ajax({
+                    url: "@Url.Action("ProductCatalog")",
+                    type: 'POST',
+                    data: { productId },
+                    dataType: "html",
+                    success: function (response) {
+                        $('.dynamic-content').html(response)
+                        $('#chooseProduct').modal({ backdrop: 'static', keyboard: false, show: true });
+                       
+                        $("#chooseProduct").on('hide.bs.modal', function () {
+                            $('body').removeClass('fade-active');
+                        });
+                    }
+                });
+
+            })
+        })
+    </script>
+
+}
+
+

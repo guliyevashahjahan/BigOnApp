@@ -5,6 +5,7 @@
 @{
     ViewData["Title"] = "Index";
 }
+
 <div id="shopify-section-template--14146685272115__main" class="shopify-section">
     <!-- Shop Page Start -->
     <div class="main-shop-page" id="section-template--14146685272115__main">
@@ -343,8 +344,6 @@
         </div>
     </div>
 
-    <!-- BREADCRUMBS SETCTION END -->
-
     <style>
 
         .breadcrumbs-section .breadcrumbs-inner {
@@ -353,8 +352,14 @@
 
     </style>
   }
+  @section addcss{
+    <link href="~/libraries/zoom-image-viewer/zoom-image-viewer.css" rel="stylesheet" />
 
+  }
 @section addjs{
+   
+    <script src="~/libraries/zoom-image-viewer/zoom-image-viewer.js"></script>
+    <script src="https://kit.fontawesome.com/85493f3ea1.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script>
@@ -405,6 +410,88 @@
                 search(filterObject);
 
             })
+
+            $('a.add-to-cart').click(function (e) {
+
+                e.preventDefault();
+
+                const productId = $(e.currentTarget).data('id');
+                $('body').addClass('fade-active')
+
+
+                $.ajax({
+                    url: "@Url.Action("ProductCatalog")",
+                    type: 'POST',
+                    data: { productId },
+                    dataType: "html",
+                    success: function (response) {
+                       $('.dynamic-content').html(response)
+                        $('#chooseProduct').modal({ backdrop: 'static', keyboard: false, show: true });
+                        $("#chooseProduct").on('hide.bs.modal', function () {
+                            $('body').removeClass('fade-active');
+                        });
+                       
+                        $('.zoom-image-viewer li.thumbnail').each((index, item) => {
+                            const data = $(item).data();
+                            $(item).css('background-image', `url(${data.image})`);
+                        })
+                            .click(function (e) {
+                                e.preventDefault();
+                                const data = $(e.currentTarget).data();
+                                $('.zoom-image-viewer .original > img').prop('src', data.image).zoom(2);
+                                $('.zoom-image-viewer .viewer > img').prop('src', data.image);
+                            }).first().trigger('click');
+
+                        $('#chooseProduct').modal({ backdrop: 'static', keyboard: false, show: true });
+                        $('.owl-carousel').owlCarousel({
+                            loop: false,
+                            navText: [
+                                "<i class='fa fa-angle-left'></i>",
+                                "<i class='fa fa-angle-right'></i>"
+                            ],
+                            margin: 15,
+                            smartSpeed: 1000,
+                            nav: true,
+                            dots: false,
+                            responsive: {
+                                0: {
+                                    items: 4
+                                },
+                                600: {
+                                    items: 4
+                                },
+                                1000: {
+                                    items: 5
+                                }
+                            }
+                        });
+                    }
+                });
+
+            })
+
+
+            // $("#chooseProduct").submit(function (e) {
+            //     e.preventDefault();
+            //     let formData = new FormData(e.currentTarget);
+
+            // //     $.ajax({
+            // //         url: '@Url.Action("SignIn","Account")',
+            // //         type: 'POST',
+            // //         data: formData,
+            // //         processData: false,
+            // //         contentType: false,
+            // //         success: function (response) {
+            // //             $(e.currentTarget).modal('hide');
+            // //         },
+            // //         error: function (response) {
+            // //             console.log(response)
+            // //         }
+            // //     });
+
+            // });
+
+
             function updateRangeValues(min, max) {
                 $('#range-values').text(`${min}-${max}`);
             }

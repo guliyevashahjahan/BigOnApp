@@ -486,6 +486,7 @@
                 });
             }
         })();</script>
+    @await RenderSectionAsync("addcss",required:false)
 </head>
 
 
@@ -3050,6 +3051,9 @@
     @RenderSection("addjs",required:false);
 
     <partial name="_SoftLogin" />
+
+    <div class="dynamic-content"></div>
+
 </body>
 
 <!-- Mirrored from bigon-5.myshopify.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Sep 2022 14:12:00 GMT -->
