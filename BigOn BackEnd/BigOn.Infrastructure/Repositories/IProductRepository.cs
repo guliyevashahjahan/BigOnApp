@@ -19,6 +19,6 @@ namespace BigOn.Infrastructure.Repositories
         IQueryable<ProductImage> GetImages(Expression<Func<ProductImage, bool>> expression = null);
         Task<Basket> AddToBasketAsync(Basket basket,CancellationToken cancellationToken);
         Task<Basket> ChangeBasketQuantityAsync(Basket basket,CancellationToken cancellationToken);
-        Task<ProductRate> SetRateAsync(ProductRate rate,CancellationToken cancellationToken);
+        Task<string> SetRateAsync(ProductRate rate,CancellationToken cancellationToken);
     }
 }

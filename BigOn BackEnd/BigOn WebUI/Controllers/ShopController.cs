@@ -1,4 +1,5 @@
 ﻿using AngleSharp.Io;
+using BigOn.Business.Modules.ShopModule.Commands.SetRateCommand;
 using BigOn.Business.Modules.ShopModule.Queries.ComplexFilterQuery;
 using BigOn.Business.Modules.ShopModule.Queries.ProductCatalogQuery;
 using BigOn.Infrastructure.Extensions;
@@ -36,6 +37,13 @@ namespace BigOn_WebUI.Controllers
         {
             var response = await mediator.Send(request);
             return View(response);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> SetRate(SetRateRequest request)
+        {
+            var response = await mediator.Send(request);
+            return Json(response);
         }
 
         [AllowAnonymous]

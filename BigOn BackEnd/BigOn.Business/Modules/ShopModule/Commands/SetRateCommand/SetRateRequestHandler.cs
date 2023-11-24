@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BigOn.Business.Modules.ShopModule.Commands.SetRateCommand
 {
-    internal class SetRateRequestHandler : IRequestHandler<SetRateRequest, ProductRate>
+    internal class SetRateRequestHandler : IRequestHandler<SetRateRequest, string>
     {
         private readonly IProductRepository productRepository;
         private readonly IIdentityService identityService;
@@ -20,7 +20,7 @@ namespace BigOn.Business.Modules.ShopModule.Commands.SetRateCommand
             this.productRepository = productRepository;
             this.identityService = identityService;
         }
-        public async Task<ProductRate> Handle(SetRateRequest request, CancellationToken cancellationToken)
+        public async Task<string> Handle(SetRateRequest request, CancellationToken cancellationToken)
         {
             var rate = new ProductRate
             {
@@ -28,7 +28,10 @@ namespace BigOn.Business.Modules.ShopModule.Commands.SetRateCommand
                 Rate = request.Rate,
                 UserId = identityService.GetPrincipalId().Value
             };
-            return await productRepository.SetRateAsync(rate, cancellationToken);
+            var response = await productRepository.SetRateAsync(rate, cancellationToken);
+            productRepository.Save();
+            return response;
+            
         }
     }
 }

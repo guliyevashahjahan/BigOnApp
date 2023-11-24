@@ -92,7 +92,7 @@ namespace BigOn.Data.Repositories
             return sizes;
         }
 
-        public async Task<ProductRate> SetRateAsync(ProductRate rate, CancellationToken cancellationToken)
+        public async Task<string> SetRateAsync(ProductRate rate, CancellationToken cancellationToken)
         {
             var product = this.Get(m => m.Id == rate.ProductId && m.DeletedBy == null);
             var productRate = await db.Set<ProductRate>().FirstOrDefaultAsync(m=>m.ProductId==rate.ProductId &&m.UserId==rate.UserId,cancellationToken);
@@ -105,10 +105,23 @@ namespace BigOn.Data.Repositories
                 productRate = rate;
                 await db.Set<ProductRate>().AddAsync(productRate, cancellationToken);
             }
+
+            await db.SaveChangesAsync(cancellationToken);
             product.Rate = db.Set<ProductRate>().Where(m => m.ProductId == product.Id).Average(m => m.Rate);
-
-            return productRate;
-
+           return productRate.Rate switch
+            {
+                var v when v >= 4.8D => "rate-5",
+                var v when v > 4D => "rate-half5",
+                var v when v >= 3.8D => "rate-4",
+                var v when v > 3D => "rate-half4",
+                var v when v >= 2.8D => "rate-3",
+                var v when v > 2D => "rate-half3",
+                var v when v >= 1.8D => "rate-2",
+                var v when v > 1D => "rate-half2",
+                var v when v >= 0.8D => "rate-1",
+                var v when v > 0 => "rate-half1",
+                _ => ""
+            };
         }
     }
 }

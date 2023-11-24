@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BigOn.Business.Modules.ShopModule.Commands.SetRateCommand
 {
-    public class SetRateRequest : IRequest<ProductRate>
+    public class SetRateRequest : IRequest<string>
     {
         public int ProductId { get; set; }
         public int Rate { get; set; }

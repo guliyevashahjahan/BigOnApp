@@ -14,7 +14,7 @@ namespace BigOn.Business.Modules.ShopModule.Queries.ProductCatalogQuery
         public string Name { get; set; }
         public string StockKeepingUnit { get; set; }
         public IEnumerable<ProductCatalogItem> Catalog {  get; set; }
-        public decimal Rate { get; set; }
+        public double Rate { get; set; }
         public string[] Images { get; set; }
         public decimal Price { get; set; }
     }

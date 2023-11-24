@@ -9,7 +9,9 @@
             <a href="../products/accusantium-doloremque.html"></a>
         </div>
         <div class="pro-content">
-            <h4 class="popup_cart_title"><a href="../products/accusantium-doloremque.html">@item.Name</a></h4>
+            <h4 class="popup_cart_title">
+                <a asp-action="details" asp-route-id="@item.Id">@item.Name</a>
+                </h4>
            <rate value="@item.Rate" product-id="@item.Id"></rate>
             <p>
                 <span class="price"><span class=money>@item.Price.ToString("0.00₼")</span></span>
