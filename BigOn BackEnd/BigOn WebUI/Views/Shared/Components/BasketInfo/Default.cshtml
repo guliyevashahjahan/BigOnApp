@@ -1,8 +1,10 @@
-﻿@{
+﻿@using BigOn.Business.Modules.ShopModule.Queries.BasketListQuery
+@model IEnumerable<BasketListItem>
+@{
     var summary = new
     {
-        totalSum = 223,
-        totalCount = 3
+        totalSum = Model.Sum(m=>m.Quantity * m.Price),
+        totalCount = Model.Count()
     };
 
     <a asp-controller="Shop" asp-action="basket">
@@ -17,18 +19,26 @@
     {
         <ul class="ht-dropdown main-cart-box">
             <li>
-                <div class="single-cart-box">
-                    <div class="cart-img">
-                        <a asp-controller="shop" asp-action="details" asp-route-id="11">
-                            <img src="~/uploads/images/0a719fd1-d2a8-4a63-aca0-5bbb444d5b41.png" alt="cart-image">
+                @foreach(var item in Model)
+                {
+                    <div class="single-cart-box basket-item-@item.CatalogId">
+                        <div class="cart-img">
+                            <a asp-controller="shop" asp-action="details" asp-route-id="@item.ProductId">
+                                <img src="~/uploads/images/@item.ImagePath" alt="@item.Name">
+                            </a>
+                        </div>
+                        <div class="cart-content">
+                            <h6> <a asp-controller="shop" asp-action="details" asp-route-id="@item.ProductId">@item.Name</a></h6>
+                            <span>@Convert.ToInt32(item.Quantity) × @item.Price.ToString("0.00₼")</span>
+                        </div>
+                        <a class="del-icone" onclick="removeFromBasket(event, '@item.Name','@Url.Action("RemoveFromBasket","Shop")');return"
+                           data-catalog-id="@item.CatalogId"
+                           data-product-id="@item.ProductId"
+                           aria-remove-target=".basket-item-@item.CatalogId">
+                            <i class="fa fa-window-close-o"></i>
                         </a>
                     </div>
-                    <div class="cart-content">
-                        <h6> <a asp-controller="shop" asp-action="details" asp-route-id="11">Name</a></h6>
-                        <span>1 × $399.00</span>
-                    </div>
-                    <a class="del-icone" href="#"><i class="fa fa-window-close-o"></i></a>
-                </div>
+                }
                 <div class="cart-footer fix">
                     <h5>total :<span class="f-right">@summary.totalSum.ToString("0.00₼")</span></h5>
                     <div class="cart-actions">

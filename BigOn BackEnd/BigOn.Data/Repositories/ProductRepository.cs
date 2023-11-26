@@ -46,6 +46,11 @@ namespace BigOn.Data.Repositories
             return entity;
         }
 
+        public IQueryable<Basket> GetBasket(int userId)
+        {
+            return db.Set<Basket>().Where(m => m.UserId == userId);
+        }
+
         public async Task<IEnumerable<Brand>> GetBrandsForFilter()
         {
             var brandIds = await this.GetAll(m => m.DeletedBy == null).Select(m => m.BrandId).Distinct().ToArrayAsync();
@@ -85,11 +90,42 @@ namespace BigOn.Data.Repositories
             return await db.Set<Material>().Where(m => materialIds.Contains(m.Id)).ToListAsync();
         }
 
+        public async Task<string> GetPriceAsync(ProductCatalog model, CancellationToken cancellationToken)
+        {
+            var entity = await db.Set<ProductCatalog>().FirstOrDefaultAsync(m=>m.ProductId == model.ProductId
+              && m.SizeId == model.SizeId 
+              && m.ColorId == model.ColorId 
+              && m.MaterialId == model.MaterialId, cancellationToken);
+
+            if (entity?.Price != null)
+            {
+                return $"{entity?.Price.Value:0.00}₼";
+            }
+            var product = this.Get(m => m.Id == model.ProductId);
+
+            return $"{product.Price:0.00}₼";
+        }
+
         public async Task<IEnumerable<Size>> GetSizesForFilter()
         {
             var sizeIds = await db.Set<ProductCatalog>().Select(m => m.SizeId).Distinct().ToArrayAsync();
             var sizes = await db.Set<Size>().Where(m => sizeIds.Contains(m.Id)).ToListAsync();
             return sizes;
+        }
+
+        public async Task RemoveFromBasketAsync(Basket basket, CancellationToken cancellationToken)
+        {
+            var entity = await db.Set<Basket>().FirstOrDefaultAsync(m => m.UserId == basket.UserId && m.CatalogId == basket.CatalogId, cancellationToken);
+
+            if (entity is null)
+                throw new BadRequestException("BAD_DATA", new Dictionary<string, IEnumerable<string>>
+                {
+                    [nameof(basket.CatalogId)] = new[] { "Product cant be found!" }
+                });
+
+            db.Set<Basket>().Remove(entity);
+
+            await db.SaveChangesAsync(cancellationToken);
         }
 
         public async Task<string> SetRateAsync(ProductRate rate, CancellationToken cancellationToken)

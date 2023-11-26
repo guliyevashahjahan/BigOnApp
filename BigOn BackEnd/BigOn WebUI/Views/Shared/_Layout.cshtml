@@ -732,11 +732,6 @@
                                         <li>
                                             <a asp-controller="shop" asp-action="index">shop</a>
                                         </li>
-
-
-
-
-
                                     </ul>
                                 </nav>
 
@@ -754,16 +749,9 @@
                         <div class="col-xs-6 full-col fl-r visible-xs">
                             <div class="cart-box text-right">
                                 <ul>
-
-
-
-
                                     <li>
-
                                         <a href="account/login.html"><i class="fa fa-heart-o"></i></a>
-
                                     </li>
-
                                     <li>
                                         <a href="#"><i class="fa fa-shopping-basket"></i><span class="cart-counter bigcounter">0</span></a>
                                         <ul class="ht-dropdown main-cart-box">
@@ -1372,41 +1360,16 @@
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 full-col fl-r">
                             <div class="cart-box text-right">
                                 <ul>
-
-
-
-
                                     <li>
-
                                         <a href="account/login.html"><i class="fa fa-heart-o"></i></a>
 
                                     </li>
-
-                                    <li>
-                                        <a href="#"><i class="fa fa-shopping-basket"></i><span class="cart-counter bigcounter">0</span></a>
-                                        <ul class="ht-dropdown main-cart-box">
-                                            <li style="display:block;" class="cart-dropdown cart-empty-title">
-                                                <h2>Your cart is currently empty.</h2>
-                                            </li>
-                                            <li style="display:none;" class="cart-dropdown mini-cart">
-                                                <ul>
-                                                </ul>
-                                                <!-- Cart Footer Inner Start -->
-                                                <div class="cart-footer fix">
-                                                    <h5>Total :<span class="f-right shopping-cart__total"><span class=money>$0.00</span></span></h5>
-                                                    <div class="cart-actions">
-
-                                                        <a class="cart" href="cart.html">Cart</a>
-
-
-                                                        <a class="checkout" href="cart.html">Checkout</a>
-
-                                                    </div>
-                                                </div>
-                                                <!-- Cart Footer Inner End -->
-                                            </li>
-                                        </ul>
-                                    </li>
+                                    @if (User.Identity.IsAuthenticated)
+                                    {
+                                        <li>
+                                            @await Component.InvokeAsync("BasketInfo");
+                                        </li>
+                                    }                          
                                     <li class="search-bar-xs visible-xs">
                                         <a href="#"><i class="fa fa-search"></i></a>
 
@@ -3046,7 +3009,7 @@
     </script>
     <script src="~/libraries/toastr.js/toastr.min.js"></script>
     <script src="~/assets/js/toastr-additional.js"></script>
-
+    <script src="~/assets/js/additional.js"></script>
 
     @RenderSection("addjs",required:false);
 

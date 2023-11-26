@@ -17,8 +17,11 @@ namespace BigOn.Infrastructure.Repositories
         Task<IEnumerable<Brand>> GetBrandsForFilter();
         IQueryable<ProductCatalog> GetCatalog(Expression<Func<ProductCatalog, bool>> expression = null);
         IQueryable<ProductImage> GetImages(Expression<Func<ProductImage, bool>> expression = null);
+        IQueryable<Basket> GetBasket(int userId);
         Task<Basket> AddToBasketAsync(Basket basket,CancellationToken cancellationToken);
+        Task RemoveFromBasketAsync(Basket basket, CancellationToken cancellationToken);
         Task<Basket> ChangeBasketQuantityAsync(Basket basket,CancellationToken cancellationToken);
         Task<string> SetRateAsync(ProductRate rate,CancellationToken cancellationToken);
+        Task<string> GetPriceAsync(ProductCatalog model,CancellationToken cancellationToken);
     }
 }

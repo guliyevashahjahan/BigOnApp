@@ -10,7 +10,10 @@ namespace BigOn.Business.Modules.ShopModule.Commands.AddBasketCommand
 {
     public class BasketAddRequest : IRequest<Basket>
     {
-        public int CatalogId { get; set; }
+        public int ProductId { get; set; }
+        public int SizeId { get; set; }
+        public int ColorId { get; set; }
+        public int MaterialId { get; set; }
         public decimal Quantity { get; set;}
     }
 

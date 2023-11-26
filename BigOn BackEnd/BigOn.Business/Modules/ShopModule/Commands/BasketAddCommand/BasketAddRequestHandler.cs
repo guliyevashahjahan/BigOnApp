@@ -4,6 +4,7 @@ using BigOn.Infrastructure.Services.Abstracts;
 using MediatR;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,14 +23,21 @@ namespace BigOn.Business.Modules.ShopModule.Commands.AddBasketCommand
         }
         public async Task<Basket> Handle(BasketAddRequest request, CancellationToken cancellationToken)
         {
+            var catalog =productRepository.GetCatalog(m => m.ProductId == request.ProductId
+            && m.ColorId == request.ColorId
+            && m.MaterialId == request.MaterialId
+            && m.SizeId == request.SizeId).FirstOrDefault();
+
             var basket = new Basket
             {
                 UserId = identityService.GetPrincipalId().Value,
-                CatalogId = request.CatalogId,
-                Quantity = request.Quantity,
+                CatalogId = catalog.Id,
+                Quantity = request.Quantity<=0 ? 1 : request.Quantity,
             };
 
-            return await productRepository.AddToBasketAsync(basket, cancellationToken); ;
+            await productRepository.AddToBasketAsync(basket, cancellationToken);
+            productRepository.Save();
+            return basket;
         }
     }
 }
