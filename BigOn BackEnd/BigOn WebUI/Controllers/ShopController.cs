@@ -1,5 +1,6 @@
 ﻿using AngleSharp.Io;
 using BigOn.Business.Modules.ShopModule.Commands.AddBasketCommand;
+using BigOn.Business.Modules.ShopModule.Commands.CreateOrderCommand;
 using BigOn.Business.Modules.ShopModule.Commands.RemoveFromBasketCommand;
 using BigOn.Business.Modules.ShopModule.Commands.SetRateCommand;
 using BigOn.Business.Modules.ShopModule.Queries.BasketListQuery;
@@ -80,12 +81,12 @@ namespace BigOn_WebUI.Controllers
             return View(response);
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> Checkout(CreateOrderRequest request)
-        //{
-        //    var response = await mediator.Send(request);
-        //    return Json(response);
-        //}
+        [HttpPost]
+        public async Task<IActionResult> Checkout(CreateOrderRequest request)
+        {
+            var response = await mediator.Send(request);
+            return Json(response);
+        }
 
 
         [AllowAnonymous]

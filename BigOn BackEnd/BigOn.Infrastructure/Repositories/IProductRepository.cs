@@ -23,5 +23,8 @@ namespace BigOn.Infrastructure.Repositories
         Task<Basket> ChangeBasketQuantityAsync(Basket basket,CancellationToken cancellationToken);
         Task<string> SetRateAsync(ProductRate rate,CancellationToken cancellationToken);
         Task<string> GetPriceAsync(ProductCatalog model,CancellationToken cancellationToken);
+        Task<Order> CreateOrder(Order model, int userId,CancellationToken cancellationToken);
+        Task<ProductImage> AddProductImageAsync(int productId, ProductImage image,CancellationToken cancellationToken);
+        Task<ProductCatalog> AddProductCatalogItemAsync(int productId, ProductCatalog item,CancellationToken cancellationToken);
     }
 }

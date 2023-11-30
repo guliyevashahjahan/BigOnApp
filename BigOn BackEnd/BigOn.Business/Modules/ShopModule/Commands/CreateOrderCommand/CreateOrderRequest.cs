@@ -1,14 +1,15 @@
-﻿using BigOn.Infrastructure.Commons.Concrates;
+﻿using BigOn.Infrastructure.Entities;
 using BigOn.Infrastructure.Enums;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BigOn.Infrastructure.Entities
+namespace BigOn.Business.Modules.ShopModule.Commands.CreateOrderCommand
 {
-    public class Order : BaseEntity<int>
+    public class CreateOrderRequest : IRequest<Order>
     {
         public string ShippingAddress { get; set; }
         public string ShippingCountry { get; set; }
@@ -16,10 +17,6 @@ namespace BigOn.Infrastructure.Entities
         public string Postcode { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
-        public string? CouponCode { get; set; }
-        public decimal? DiscountAmount { get; set; }
-        public decimal Amount { get; set; }
-        public OrderState State { get; set; }
+        public string CouponCode { get; set; }
     }
-   
 }

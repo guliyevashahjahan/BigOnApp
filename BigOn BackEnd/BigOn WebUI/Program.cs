@@ -1,10 +1,13 @@
+using Bigon.Infrastructure.Middlewares;
 using BigOn.Business;
 using BigOn.Data;
 using BigOn.Data.Persistences;
+using BigOn.Infrastructure.Middlewares;
 using BigOn.Infrastructure.Services.Abstracts;
 using BigOn.Infrastructure.Services.Concrates;
 using BigOn.Infrastructure.Services.Configurations;
 using BigOn_WebUI.Pipeline;
+using MediatR;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
@@ -31,6 +34,7 @@ namespace BigOn_WebUI
                AuthorizationPolicy policy =new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
              
                 cfg.Filters.Add(new AuthorizeFilter(policy));
+                cfg.ModelBinderProviders.Insert(0, new BooleanBinderProvider());
                
             });
             DataServiceInjection.InstallDataServices(builder.Services,builder.Configuration);
@@ -57,6 +61,7 @@ namespace BigOn_WebUI
             builder.Services.AddSingleton<IFileService, FileService>();
             builder.Services.AddScoped<IIdentityService, IdentityService>();
             builder.Services.AddScoped<IClaimsTransformation, AppClaimProvider>();
+            builder.Services.AddScoped(typeof(IPipelineBehavior<,>),typeof(TransactionalBehaviour<,>));
 
             builder.Services.AddMediatR(cfg =>
             {

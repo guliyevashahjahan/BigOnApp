@@ -9,6 +9,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace BigOn.Data.Repositories
 {
@@ -16,6 +17,20 @@ namespace BigOn.Data.Repositories
     {
         public ProductRepository(DbContext db) : base(db)
         {
+        }
+
+        public async Task<ProductCatalog> AddProductCatalogItemAsync(int productId, ProductCatalog item, CancellationToken cancellationToken)
+        {
+            item.ProductId = productId;
+            await db.Set<ProductCatalog>().AddAsync(item, cancellationToken);
+            return item;
+        }
+
+        public async Task<ProductImage> AddProductImageAsync(int productId, ProductImage image, CancellationToken cancellationToken)
+        {
+            image.ProductId= productId;
+            await db.Set<ProductImage>().AddAsync(image,cancellationToken);
+            return image;
         }
 
         public async Task<Basket> AddToBasketAsync(Basket basket, CancellationToken cancellationToken)
@@ -44,6 +59,36 @@ namespace BigOn.Data.Repositories
             entity.Quantity = basket.Quantity;
             db.SaveChangesAsync(cancellationToken);
             return entity;
+        }
+
+        public async Task<Order> CreateOrder(Order model,int userId,CancellationToken cancellationToken)
+        {
+
+            var details =await (from b in this.GetBasket(userId)
+                          join pc in this.GetCatalog() on b.CatalogId equals pc.Id
+                          join p in this.GetAll() on pc.ProductId equals p.Id
+                          select new OrderDetail
+                          {
+                              OrderId = model.Id,
+                              CatalogId = b.CatalogId,
+                              Price = pc.Price == null ? p.Price : pc.Price.Value,
+                              Quantity = b.Quantity
+                          }).ToArrayAsync(cancellationToken);
+
+            model.Amount = details.Sum(m=>m.Quantity * m.Price);
+
+            await db.Set<Order>().AddAsync(model,cancellationToken);
+            db.SaveChanges();
+            details = details.Select(m => new OrderDetail
+            {
+                OrderId = model.Id,
+                CatalogId = m.CatalogId,
+                Price = m.Price,
+                Quantity = m.Quantity
+            }).ToArray();
+            await db.Set<OrderDetail>().AddRangeAsync(details, cancellationToken);
+            db.SaveChanges();
+            return model;
         }
 
         public IQueryable<Basket> GetBasket(int userId)
