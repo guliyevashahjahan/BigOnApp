@@ -26,5 +26,8 @@ namespace BigOn.Infrastructure.Repositories
         Task<Order> CreateOrder(Order model, int userId,CancellationToken cancellationToken);
         Task<ProductImage> AddProductImageAsync(int productId, ProductImage image,CancellationToken cancellationToken);
         Task<ProductCatalog> AddProductCatalogItemAsync(int productId, ProductCatalog item,CancellationToken cancellationToken);
+        void RemoveProductImage(ProductImage image);
+        Task<ProductCatalog> GetProductCatalogByIdAsync (int catalogId, CancellationToken cancellationToken);
+        void RemoveProductCatalogItem ( ProductCatalog catalogItem);
     }
 }

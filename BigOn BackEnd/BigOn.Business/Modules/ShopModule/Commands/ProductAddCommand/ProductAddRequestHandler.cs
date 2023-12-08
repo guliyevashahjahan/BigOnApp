@@ -29,7 +29,7 @@ namespace BigOn.Business.Modules.ShopModule.Commands.ProductAddCommand
                 Price = request.Price,
                 ShortDescription = request.ShortDescription,
                 StockKeepingUnit = request.StockKeepingUnit,
-                Description = request.Description,
+                Description =request.Description,
                 BrandId = request.BrandId,
                 CategoryId = request.CategoryId,
             };

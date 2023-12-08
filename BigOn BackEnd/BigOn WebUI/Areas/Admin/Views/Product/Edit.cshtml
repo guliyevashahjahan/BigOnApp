@@ -1,8 +1,8 @@
-﻿@using BigOn.Business.Modules.ShopModule.Commands.ProductAddCommand
-@model ProductAddRequest
+﻿@using BigOn.Business.Modules.ShopModule.Queries.ProductGetByIdQuery;
+@model ProductGetByIdDto
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Edit";
 }
 
 <div class="page-header">
@@ -87,23 +87,25 @@
                                         <option selected disabled>--- Secin ---</option>
                                     </select>
                                 </div>
-                             
                             </div>
                             <div class="col-7">
-                                <div class="imager-container" id="viewer1" name="images"></div>
+                                <div class="imager-container" id="viewer1" name="images">
+                                    @foreach (var item in Model.Images)
+                                    {
+                                        <label thumb-url='/uploads/images/@item.Name' image-id="@item.Id" @(item.IsMain ? "checked=true" : "")></label>
+                                    }
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <div id="description">
-                                    <div class="my-2">
-                                        <textarea class="form-control editor" id="editor" asp-for="Description"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
                                 <div class="tab-control w-100" role="tabcontrol">
-                                    <div class="tab-page" id="roles" aria-title="Catalog" selected>
+                                    <div class="tab-page" id="description" aria-title="Description" selected>
+                                        <div class="my-2">
+                                            <textarea class="form-control editor" id="editor" asp-for="Description"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="tab-page" id="roles" aria-title="Catalog">
                                         <table class="table table-input">
                                             <thead>
                                                 <tr>
@@ -118,7 +120,31 @@
                                                     </th>
                                                 </tr>
                                             </thead>
-                                            <tbody id="catalog-options"></tbody>
+                                            <tbody id="catalog-options">
+                                                @foreach (var item in Model.Catalog)
+                                                {
+                                                    <tr>
+                                                        <td>
+                                                            <input data-name="Id" type="hidden" value="@item.Id" />
+                                                            <select data-name="ColorId" asp-items="@ViewBag.ColorId" selected-id="@item.ColorId" class="form-control select2"></select>
+                                                        </td>
+                                                        <td>
+                                                            <select data-name="SizeId" asp-items="@ViewBag.SizeId" selected-id="@item.SizeId" class="form-control select2"></select>
+                                                        </td>
+                                                        <td>
+                                                            <select data-name="MaterialId" asp-items="@ViewBag.MaterialId" selected-id="@item.MaterialId" class="form-control select2"></select>
+                                                        </td>
+                                                        <td class="cell-price">
+                                                            <input data-name="Price" type="number" value="@item.Price" class="form-control" />
+                                                        </td>
+                                                        <td class="operation" style="min-width: 20px;max-width: 20px;">
+                                                            <button class="btn btn-sm btn-danger text-white" onclick="removeCatalogItem(event)">
+                                                                <i class="fa fa-trash"></i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                }
+                                            </tbody>
                                         </table>
                                     </div>
                                 </div>
@@ -126,6 +152,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
+                                <input asp-for="Id" type="hidden" />
                                 <a class="btn btn-info" asp-action="Index">Go Back</a>
                                 <button class="btn btn-success">Save</button>
                             </div>
@@ -138,14 +165,14 @@
 </div>
 
 @section addcss{
-    <link href="~/libraries/tab-control/tab-control.css" rel="stylesheet" />
     <link href="~/libraries/multiple-imager/css/imager.css" rel="stylesheet" />
+    <link href="~/libraries/tab-control/tab-control.css" rel="stylesheet" />
 }
 
 @section addjs{
-    <script src="~/libraries/tab-control/tab-control.js"></script>
-    <script src="~/libraries/ckeditor5/ckeditor.min.js"></script>
     <script src="~/libraries/multiple-imager/js/imager.js"></script>
+    <script src="~/libraries/ckeditor5/ckeditor.min.js"></script>
+    <script src="~/libraries/tab-control/tab-control.js"></script>
     <script>
         $(document).ready(function () {
             $('#viewer1').imgadd({
@@ -154,6 +181,16 @@
                 fontSize: '55px',
                 plusInnerHtml: '',
                 plusBtnClass: undefined
+            });
+
+            $('select[selected-id]').each((index, item) => {
+
+                let selectedId = $(item).attr('selected-id');
+
+                $(item).val(selectedId);
+
+                $(item).trigger('change').select2();;
+
             });
 
             $('#addNewCatalog').click(function (e) {

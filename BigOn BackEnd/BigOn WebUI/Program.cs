@@ -17,6 +17,7 @@ using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using Serilog;
 using System.Reflection;
 
 namespace BigOn_WebUI
@@ -35,10 +36,20 @@ namespace BigOn_WebUI
              
                 cfg.Filters.Add(new AuthorizeFilter(policy));
                 cfg.ModelBinderProviders.Insert(0, new BooleanBinderProvider());
-               
             });
+
+            //Log.Logger = new LoggerConfiguration()
+            // .ReadFrom.Configuration(builder.Configuration)
+            // .WriteTo.MSSqlServer(
+            //         connectionString: builder.Configuration.GetConnectionString("cString"),
+            //         sinkOptions: new SqlServerSinkOptions(),
+            //         columnOptions: new SqlServerColumnOptions()
+            //         )
+            // .CreateLogger();
+
+            builder.Host.UseSerilog();
             DataServiceInjection.InstallDataServices(builder.Services,builder.Configuration);
-         ;
+         
 
             builder.Services.AddRouting(cfg =>
             {
@@ -61,6 +72,9 @@ namespace BigOn_WebUI
             builder.Services.AddSingleton<IFileService, FileService>();
             builder.Services.AddScoped<IIdentityService, IdentityService>();
             builder.Services.AddScoped<IClaimsTransformation, AppClaimProvider>();
+
+
+            builder.Services.AddScoped(typeof(IPipelineBehavior<,>), typeof(LoggingBehaviour<,>));
             builder.Services.AddScoped(typeof(IPipelineBehavior<,>),typeof(TransactionalBehaviour<,>));
 
             builder.Services.AddMediatR(cfg =>

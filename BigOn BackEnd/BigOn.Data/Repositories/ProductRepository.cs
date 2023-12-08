@@ -151,6 +151,13 @@ namespace BigOn.Data.Repositories
             return $"{product.Price:0.00}₼";
         }
 
+        public async Task<ProductCatalog> GetProductCatalogByIdAsync(int catalogId, CancellationToken cancellationToken)
+        {
+            var catalogItem =await this.GetCatalog(m=>m.Id == catalogId).FirstOrDefaultAsync(cancellationToken);
+
+            return catalogItem;
+        }
+
         public async Task<IEnumerable<Size>> GetSizesForFilter()
         {
             var sizeIds = await db.Set<ProductCatalog>().Select(m => m.SizeId).Distinct().ToArrayAsync();
@@ -171,6 +178,16 @@ namespace BigOn.Data.Repositories
             db.Set<Basket>().Remove(entity);
 
             await db.SaveChangesAsync(cancellationToken);
+        }
+
+        public void RemoveProductCatalogItem(ProductCatalog catalogItem)
+        {
+            db.Set<ProductCatalog>().Remove(catalogItem);
+        }
+
+        public void RemoveProductImage(ProductImage image)
+        {
+            db.Set<ProductImage>().Remove(image);
         }
 
         public async Task<string> SetRateAsync(ProductRate rate, CancellationToken cancellationToken)
