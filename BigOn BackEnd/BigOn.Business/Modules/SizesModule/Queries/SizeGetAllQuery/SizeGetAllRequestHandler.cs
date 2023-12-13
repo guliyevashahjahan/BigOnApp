@@ -4,6 +4,7 @@ using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Core;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,7 +20,7 @@ namespace BigOn.Business.Modules.SizesModule.Queries.SizeGetAllQuery
             this.sizeRepository = sizeRepository;
         }
         public async Task<IEnumerable<Size>> Handle(SizeGetAllRequest request, CancellationToken cancellationToken)
-        {
+        { 
             return sizeRepository.GetAll(m => m.DeletedBy == null).ToList();
         }
     }

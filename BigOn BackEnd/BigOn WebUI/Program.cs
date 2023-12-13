@@ -7,6 +7,7 @@ using BigOn.Infrastructure.Services.Abstracts;
 using BigOn.Infrastructure.Services.Concrates;
 using BigOn.Infrastructure.Services.Configurations;
 using BigOn_WebUI.Pipeline;
+using BigOn_WebUI.Serilog;
 using MediatR;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -32,24 +33,24 @@ namespace BigOn_WebUI
 
             builder.Services.AddControllersWithViews(cfg =>
             {
-               AuthorizationPolicy policy =new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
-             
+                AuthorizationPolicy policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+
                 cfg.Filters.Add(new AuthorizeFilter(policy));
                 cfg.ModelBinderProviders.Insert(0, new BooleanBinderProvider());
             });
 
-            //Log.Logger = new LoggerConfiguration()
-            // .ReadFrom.Configuration(builder.Configuration)
-            // .WriteTo.MSSqlServer(
-            //         connectionString: builder.Configuration.GetConnectionString("cString"),
-            //         sinkOptions: new SqlServerSinkOptions(),
-            //         columnOptions: new SqlServerColumnOptions()
-            //         )
-            // .CreateLogger();
+            Log.Logger = new LoggerConfiguration()
+             .ReadFrom.Configuration(builder.Configuration)
+             .WriteTo.MSSqlServer(
+                     connectionString: builder.Configuration.GetConnectionString("cString"),
+                     sinkOptions: new SqlServerSinkOptions(),
+                            columnOptions: new SqlServerColumnOptions()
+                     )
+             .CreateLogger();
 
             builder.Host.UseSerilog();
-            DataServiceInjection.InstallDataServices(builder.Services,builder.Configuration);
-         
+            DataServiceInjection.InstallDataServices(builder.Services, builder.Configuration);
+
 
             builder.Services.AddRouting(cfg =>
             {
@@ -57,7 +58,7 @@ namespace BigOn_WebUI
             });
 
             builder.Services.Configure<EmailOptions>(cfg => builder.Configuration.GetSection(cfg.GetType().Name).Bind(cfg));
-             
+
             builder.Services.Configure<CryptoOptions>(cfg => builder.Configuration.GetSection(cfg.GetType().Name).Bind(cfg));
 
             builder.Services.Configure<JwtOptions>(cfg => builder.Configuration.GetSection(cfg.GetType().Name).Bind(cfg));
@@ -75,7 +76,7 @@ namespace BigOn_WebUI
 
 
             builder.Services.AddScoped(typeof(IPipelineBehavior<,>), typeof(LoggingBehaviour<,>));
-            builder.Services.AddScoped(typeof(IPipelineBehavior<,>),typeof(TransactionalBehaviour<,>));
+            builder.Services.AddScoped(typeof(IPipelineBehavior<,>), typeof(TransactionalBehaviour<,>));
 
             builder.Services.AddMediatR(cfg =>
             {
@@ -123,11 +124,11 @@ namespace BigOn_WebUI
 
                 cfg.Lockout.AllowedForNewUsers = true;
                 cfg.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(3);
-                cfg.Lockout.MaxFailedAccessAttempts = 3; 
+                cfg.Lockout.MaxFailedAccessAttempts = 3;
             });
 
 
-            var app = builder.Build(); 
+            var app = builder.Build();
 
             app.BuildServices();
             app.UseStaticFiles();
@@ -142,12 +143,12 @@ namespace BigOn_WebUI
                     name: "Areas",
                   pattern: "{area:exists}/{controller=dashboard}/{action=index}/{id?}");
                 endpoints.MapControllerRoute("default", "{controller=home}/{action=index}/{id?}");
-               
+
             });
-          
+
             app.Run();
         }
-        private static void ReadAllPolicies() 
+        private static void ReadAllPolicies()
         {
             var types = typeof(Program).Assembly.GetTypes();
             policies = types
